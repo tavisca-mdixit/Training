@@ -3,42 +3,40 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using OperatorOverloadingMoney;
+using OperatorOverloading;
 
-namespace OperatorOverloading.Host
+namespace OperatorOverloading
 {
     class Host
     {
         static void Main(string[] args)
         {
-            Money Money1 = new Money();
-            Money Money2 = new Money();
-            Money Money3 = new Money();
-
+            Money moneyOne = new Money();
+            Money moneyTwo= new Money();
+            Money moneyThree = new Money();
+            double amount;
+           
      
-
-            try
-            {
                 Console.WriteLine("Enter the Curreny type  USD/INR and the amount ");
-                Money1.Currency = Console.ReadLine();
-                Money1.Amount = Convert.ToDouble(Console.ReadLine());
-    
-
+                moneyOne.currency = Console.ReadLine();
+                double.TryParse( Console.ReadLine(),out amount);
+                moneyOne.amount = amount;
                 Console.WriteLine("Enter the Curreny type  USD/INR/YEN and the amount ");
-                Money2.Currency = Console.ReadLine();
-                Money2.Amount = Convert.ToDouble(Console.ReadLine());
-                if (Money1.Amount < 0 || Money2.Amount < 0)
-                { throw new System.Exception();}
-                Money3 = Money2 + Money1;
-            }
-            catch(Exception E){
-                Console.WriteLine("Exception Caught");
-                Console.WriteLine("Cuurent /Amount Invalid");
-                   Console.WriteLine(E.StackTrace);
+                moneyTwo.currency = Console.ReadLine();
+                double.TryParse(Console.ReadLine(), out amount);
+                moneyTwo.amount = amount;
+                
+                try
+                {
+                    moneyThree = moneyTwo + moneyOne;
+                }
+                
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.StackTrace);
+                }
 
-            }
-
-            Console.WriteLine("The Currency and Amount is : {0}  {1}", Money3.Currency, Money3.Amount);
+                Console.WriteLine("The Currency and Amount is : {0}  {1}", moneyThree.currency, moneyThree.amount);
  
           
             Console.ReadKey();
