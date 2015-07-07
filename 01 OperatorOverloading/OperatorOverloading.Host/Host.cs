@@ -21,12 +21,12 @@ namespace OperatorOverloading.Host
             {
                 Console.WriteLine("Enter the Curreny type  USD/INR and the amount ");
                 Money1.Currency = Console.ReadLine();
-                Money1.Amount = double.MaxValue;
+                Money1.Amount = Convert.ToDouble(Console.ReadLine());
     
 
                 Console.WriteLine("Enter the Curreny type  USD/INR/YEN and the amount ");
                 Money2.Currency = Console.ReadLine();
-                Money2.Amount = 1222222E+110;
+                Money2.Amount = Convert.ToDouble(Console.ReadLine());
                 if (Money1.Amount < 0 || Money2.Amount < 0)
                 { throw new System.Exception();}
                 Money3 = Money2 + Money1;
