@@ -15,11 +15,11 @@ namespace OperatorOverloadingMoney
         public static Money operator+(Money moneyOne,Money moneyTwo)  {
             Money moneyThree = new Money();
           
-                if (moneyOne.Currency.Equals(moneyTwo.Currency))
+                if (moneyOne.Currency.Equals(moneyTwo.Currency) )
                 {
                     
                     moneyThree.Amount= moneyOne.Amount + moneyTwo.Amount;
-                    if (double.IsInfinity(moneyThree.Amount) || moneyThree.Amount<0)
+                    if (moneyOne.Amount>(double.MaxValue-moneyTwo.Amount) || moneyThree.Amount<0)
                     { throw new System.ArgumentException(); }
                     moneyThree.Currency = moneyOne.Currency;
                     return moneyThree;
