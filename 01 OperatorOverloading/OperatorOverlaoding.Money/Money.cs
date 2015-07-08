@@ -8,15 +8,25 @@ namespace OperatorOverloading
 {
     public class Money
     {
+
         private double _amount;
         private string _currency;
-        public Money(double amount, string currency)
+        public Money(string currencyAndAmount)
         {
-            this.Currency = currency;
-            this.Amount = amount;
+            var args = currencyAndAmount.Split(' ');
+            this.Currency = args[0];
+            if (double.TryParse(args[1], out _amount))
+                this.Amount = _amount;
+            else
+                Console.WriteLine("The Value Entered is Incorrect");
         }
 
-
+        public Money(double amount, string currency)
+        {
+            this.Amount = amount;
+            this.Currency = currency;
+        }
+        
         public double Amount
         {
             get
@@ -33,6 +43,7 @@ namespace OperatorOverloading
                 _amount = value;
             }
         }
+
         public string Currency
         {
             get
@@ -42,23 +53,20 @@ namespace OperatorOverloading
             private set
             {
                 //Checking for Empty/Null Strings
-                if (string.IsNullOrEmpty(value) == true)
+                if (string.IsNullOrWhiteSpace(value) == true)
                 {
                     throw new Exception(Messages.NullInput);
                 }
                 _currency = value;
             }
         }
-
-
+        
         public static Money operator +(Money moneyOne, Money moneyTwo)
         {
             if (moneyOne == null || moneyTwo == null)
             {
                 throw new ArgumentException(Messages.InvalidInput);
             }
-
-
             //Comparing two String without considering cases.
             if (string.Equals(moneyOne.Currency, moneyTwo.Currency, StringComparison.OrdinalIgnoreCase) == false)
             {
@@ -72,4 +80,3 @@ namespace OperatorOverloading
 
     }
 }
-

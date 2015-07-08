@@ -11,47 +11,32 @@ namespace OperatorOverloading
     {
         static void Main(string[] args)
         {
-           
-            double amount;
-            string currency;
+            string currencyAndAmount;
             Money moneyOne;
             Money moneyTwo;
-            Money moneyThree;
-
             try
             {
-
-
-                Console.WriteLine("Enter the Curreny type  USD/INR and the amount ");
-                currency = Console.ReadLine();
-                double.TryParse(Console.ReadLine(), out amount);
-
-                //Calling the Parameterized constructor of Money Class
-                moneyOne = new Money(amount,currency);
+                Console.WriteLine("Enter the amount and the Curreny type,, ex:  100 USD ");
+                currencyAndAmount = Console.ReadLine();
                 
-
-
-                Console.WriteLine("Enter the Curreny type  USD/INR/YEN and the amount ");
-                currency = Console.ReadLine();
-               
-
-
                 //Calling the Parameterized constructor of Money Class
-                moneyTwo = new Money(amount,currency);
+                moneyOne = new Money(currencyAndAmount);
+
+                Console.WriteLine("Enter the amount and the Curreny type,, ex:  100 USD");
+                currencyAndAmount = Console.ReadLine();
                 
+                //Calling the Parameterized constructor of Money Class
+                moneyTwo = new Money(currencyAndAmount);
+
                 //Overloading the Plus operator           
-                moneyThree = moneyTwo + moneyOne;
-
+                var moneyThree = moneyTwo + moneyOne;
                 Console.WriteLine("The Currency and Amount is : {0}  {1}", moneyThree.Currency, moneyThree.Amount);
-
             }
-
             catch (Exception e)
             {
                 Console.WriteLine(e.StackTrace);
             }
             Console.ReadKey();
-
         }
     }
 }
