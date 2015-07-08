@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace OperatorOverloading
 {
-    public class Money
+    public class Money 
     {
+        private bool _tryparse;
         private double _amount;
         private string _currency;
         public Money(string currency, double amount)
@@ -15,7 +16,18 @@ namespace OperatorOverloading
             this.Currency = currency;
             this.Amount = amount;
         }
-        
+
+        public bool TryParse
+        {
+            get
+            {
+                return _tryparse;
+            }
+            set
+            {
+                _tryparse = value;
+            }
+        }
         public double Amount
         {
             get
@@ -25,7 +37,7 @@ namespace OperatorOverloading
             private set
             {   
                 //Checking for Negative and Positive Infinity values
-                if (value < 0 || double.IsInfinity(value))
+                if (value < 0 || double.IsInfinity(value)||_tryparse==false )
                 {
                     throw new ArgumentException(Messages.InvalidInput);
                 }
@@ -53,7 +65,7 @@ namespace OperatorOverloading
         public static Money operator +(Money moneyOne, Money moneyTwo)
         {
             //Comparing two String without considering cases.
-            if (string.Equals(moneyOne.Currency, moneyTwo.Currency, StringComparison.OrdinalIgnoreCase) == false)
+            if (string.Equals(moneyOne.Currency, moneyTwo.Currency, StringComparison.OrdinalIgnoreCase) == false||moneyOne==null||moneyTwo==null)
             {
                 throw new Exception(Messages.InputNotEqual);
             }

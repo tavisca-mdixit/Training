@@ -51,9 +51,9 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\OperatorOverlaoding.Money\OperatorOverLoading.Money.csproj">
+    <ProjectReference Include="..\OperatorOverlaoding.Money\OperatorOverLoading.Model.csproj">
       <Project>{cd80a295-44c6-4e9f-b6d3-f9df4c7fe6e7}</Project>
-      <Name>OperatorOverLoading.Money</Name>
+      <Name>OperatorOverLoading.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

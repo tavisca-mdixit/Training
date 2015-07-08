@@ -11,7 +11,7 @@ namespace OperatorOverloading
     {
         static void Main(string[] args)
         {
-
+            bool tryParse;
             double amount;
             string currency;
             Money moneyOne;
@@ -20,37 +20,40 @@ namespace OperatorOverloading
 
             try
             {
-                    
-     
-               Console.WriteLine("Enter the Curreny type  USD/INR and the amount ");
-               currency = Console.ReadLine();
-               double.TryParse( Console.ReadLine(),out amount);
-               moneyOne = new Money(currency, amount);
-               Console.WriteLine("Enter the Curreny type  USD/INR/YEN and the amount ");
+
+
+                Console.WriteLine("Enter the Curreny type  USD/INR and the amount ");
                 currency = Console.ReadLine();
-                moneyTwo = new Money(currency, double.MaxValue);
-            
-               double.TryParse(Console.ReadLine(), out amount);
-            
-                
-                  moneyThree = moneyTwo + moneyOne;
+                tryParse=double.TryParse(Console.ReadLine(), out amount);
 
-                     Console.WriteLine("The Currency and Amount is : {0}  {1}", moneyThree.Currency, moneyThree.Amount);
- 
-                }
+                //Calling the Parameterized constructor of Money Class
+                moneyOne = new Money(currency, amount);
+                moneyOne.TryParse=tryParse;
                 
-                catch (Exception e)
-                {
-                    Console.WriteLine(e.StackTrace);
-                }
-
-          
-            Console.ReadKey();
- 
-       
-
                 
+                Console.WriteLine("Enter the Curreny type  USD/INR/YEN and the amount ");
+                currency = Console.ReadLine();
+                tryParse=double.TryParse(Console.ReadLine(), out amount);
+
+
+                //Calling the Parameterized constructor of Money Class
+                moneyTwo = new Money(currency, amount);
+                moneyTwo.TryParse = tryParse;
+                
+                //Overloading the Plus operator           
+                moneyThree = moneyTwo + moneyOne;
+
+                Console.WriteLine("The Currency and Amount is : {0}  {1}", moneyThree.Currency, moneyThree.Amount);
+
             }
+                           
+            catch (Exception e)
+            {
+                Console.WriteLine(e.StackTrace);
+            }
+            Console.ReadKey();
+            
         }
     }
+}
 
