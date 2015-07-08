@@ -8,38 +8,61 @@ namespace OperatorOverloading
 {
     public class Money
     {
+        private double _amount;
+        private string _currency;
+        public Money(string currency, double amount)
+        {
+            this.Currency = currency;
+            this.Amount = amount;
+        }
+        
+        public double Amount
+        {
+            get
+            {
+                return _amount;
+            }
+            private set
+            {   
+                //Checking for Negative and Positive Infinity values
+                if (value < 0 || double.IsInfinity(value))
+                {
+                    throw new ArgumentException(Messages.InvalidInput);
+                }
+                _amount = value;
+            }
+        }
+        public string Currency
+        {
+            get
+            {
+                return _currency;
+            }
+            private set
+            {
+                //Checking for Empty/Null Strings
+                if (string.IsNullOrEmpty(value) == true)
+                {
+                    throw new Exception(Messages.NullInput);
+                }
+                _currency = value;
+            }
+        }
 
-        public double amount { get; set; }
-         
-        public string currency { get; set; }
 
         public static Money operator +(Money moneyOne, Money moneyTwo)
         {
-            /*Comparing String Ignoring their cases and checking for Null values*/
-
-            if (!string.IsNullOrEmpty(moneyOne.currency) && !string.IsNullOrEmpty(moneyTwo.currency) && string.Equals(moneyOne.currency, moneyTwo.currency, StringComparison.OrdinalIgnoreCase))
+            //Comparing two String without considering cases.
+            if (string.Equals(moneyOne.Currency, moneyTwo.Currency, StringComparison.OrdinalIgnoreCase) == false)
             {
-
-                /*checked does not work for double and I was not able to find any other other method for double so i m using this logic 
-                  its similar to a=100-b ,,if a is first amount and b the is second amount with 100 being the max value
-                  a=100-b will throw me an exception if a+b>100*/
-
-                if(moneyOne.amount>double.MaxValue-moneyTwo.amount || moneyOne.amount<0 ||moneyTwo.amount<0)
-                {
-                    throw new ArgumentException("Arguements Entered are Wrong");
-                }
-                Money moneyThree = new Money();
-                moneyThree.amount= moneyOne.amount + moneyTwo.amount;
-                moneyThree.currency = moneyOne.currency;
-                return moneyThree;
+                throw new Exception(Messages.InputNotEqual);
             }
-            else
-            {
-                throw new Exception("Different  Currencies Entered/String Entered is Incorrect ");
-            }
-
+            
+            double amount = moneyOne.Amount + moneyTwo.Amount;
+            return new Money(moneyOne.Currency, amount);
 
         }
 
     }
 }
+

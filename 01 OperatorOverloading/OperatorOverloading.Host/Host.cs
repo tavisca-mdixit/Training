@@ -11,24 +11,32 @@ namespace OperatorOverloading
     {
         static void Main(string[] args)
         {
-            Money moneyOne = new Money();
-            Money moneyTwo= new Money();
-            Money moneyThree = new Money();
+
             double amount;
-           
+            string currency;
+            Money moneyOne;
+            Money moneyTwo;
+            Money moneyThree;
+
+            try
+            {
+                    
      
-                Console.WriteLine("Enter the Curreny type  USD/INR and the amount ");
-                moneyOne.currency = Console.ReadLine();
-                double.TryParse( Console.ReadLine(),out amount);
-                moneyOne.amount = amount;
-                Console.WriteLine("Enter the Curreny type  USD/INR/YEN and the amount ");
-                moneyTwo.currency = Console.ReadLine();
-                double.TryParse(Console.ReadLine(), out amount);
-                moneyTwo.amount = amount;
+               Console.WriteLine("Enter the Curreny type  USD/INR and the amount ");
+               currency = Console.ReadLine();
+               double.TryParse( Console.ReadLine(),out amount);
+               moneyOne = new Money(currency, amount);
+               Console.WriteLine("Enter the Curreny type  USD/INR/YEN and the amount ");
+                currency = Console.ReadLine();
+                moneyTwo = new Money(currency, double.MaxValue);
+            
+               double.TryParse(Console.ReadLine(), out amount);
+            
                 
-                try
-                {
-                    moneyThree = moneyTwo + moneyOne;
+                  moneyThree = moneyTwo + moneyOne;
+
+                     Console.WriteLine("The Currency and Amount is : {0}  {1}", moneyThree.Currency, moneyThree.Amount);
+ 
                 }
                 
                 catch (Exception e)
@@ -36,10 +44,13 @@ namespace OperatorOverloading
                     Console.WriteLine(e.StackTrace);
                 }
 
-                Console.WriteLine("The Currency and Amount is : {0}  {1}", moneyThree.currency, moneyThree.amount);
- 
           
             Console.ReadKey();
+ 
+       
+
+                
+            }
         }
     }
-}
+
