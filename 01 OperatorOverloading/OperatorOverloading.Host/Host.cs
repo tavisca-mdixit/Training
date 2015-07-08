@@ -11,7 +11,7 @@ namespace OperatorOverloading
     {
         static void Main(string[] args)
         {
-            bool tryParse;
+           
             double amount;
             string currency;
             Money moneyOne;
@@ -24,21 +24,20 @@ namespace OperatorOverloading
 
                 Console.WriteLine("Enter the Curreny type  USD/INR and the amount ");
                 currency = Console.ReadLine();
-                tryParse=double.TryParse(Console.ReadLine(), out amount);
+                double.TryParse(Console.ReadLine(), out amount);
 
                 //Calling the Parameterized constructor of Money Class
-                moneyOne = new Money(currency, amount);
-                moneyOne.TryParse=tryParse;
+                moneyOne = new Money(amount,currency);
                 
-                
+
+
                 Console.WriteLine("Enter the Curreny type  USD/INR/YEN and the amount ");
                 currency = Console.ReadLine();
-                tryParse=double.TryParse(Console.ReadLine(), out amount);
+               
 
 
                 //Calling the Parameterized constructor of Money Class
-                moneyTwo = new Money(currency, amount);
-                moneyTwo.TryParse = tryParse;
+                moneyTwo = new Money(amount,currency);
                 
                 //Overloading the Plus operator           
                 moneyThree = moneyTwo + moneyOne;
@@ -46,13 +45,13 @@ namespace OperatorOverloading
                 Console.WriteLine("The Currency and Amount is : {0}  {1}", moneyThree.Currency, moneyThree.Amount);
 
             }
-                           
+
             catch (Exception e)
             {
                 Console.WriteLine(e.StackTrace);
             }
             Console.ReadKey();
-            
+
         }
     }
 }

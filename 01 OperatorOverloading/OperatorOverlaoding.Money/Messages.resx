@@ -121,7 +121,7 @@
     <value>Strings Entered are not equal</value>
   </data>
   <data name="InvalidInput" xml:space="preserve">
-    <value>Amount entered is negative or equal to positive ifinity</value>
+    <value>Amount entered invalid</value>
   </data>
   <data name="NullInput" xml:space="preserve">
     <value>String entered is Null/Empty</value>
