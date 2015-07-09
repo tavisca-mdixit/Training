@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using OperatorOverloading;
+using System.IO;
+using OperatorOverloading.Host;
 
 namespace OperatorOverloading
 {
@@ -11,6 +13,7 @@ namespace OperatorOverloading
     {
         static void Main(string[] args)
         {
+            
             string currencyAndAmount;
             Money moneyOne;
             Money moneyTwo;
@@ -18,13 +21,13 @@ namespace OperatorOverloading
             {
                 Console.WriteLine("Enter the amount and the Curreny type,, ex:  100 USD ");
                 currencyAndAmount = Console.ReadLine();
-                
+
                 //Calling the Parameterized constructor of Money Class
                 moneyOne = new Money(currencyAndAmount);
 
                 Console.WriteLine("Enter the amount and the Curreny type,, ex:  100 USD");
                 currencyAndAmount = Console.ReadLine();
-                
+
                 //Calling the Parameterized constructor of Money Class
                 moneyTwo = new Money(currencyAndAmount);
 
@@ -36,7 +39,7 @@ namespace OperatorOverloading
             {
                 Console.WriteLine(e.StackTrace);
             }
-            Console.ReadKey();
+            Console.ReadKey();                          
         }
     }
 }

@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperatorOverloading.Host", "OperatorOverloading.Host\OperatorOverloading.Host.csproj", "{CFEA441B-2B27-4555-A0C1-94638E924EDB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperatorOverLoading.Money", "OperatorOverlaoding.Money\OperatorOverLoading.Money.csproj", "{CD80A295-44C6-4E9F-B6D3-F9DF4C7FE6E7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "operatorOverloading.DBL", "OperatorOverloading.Interface\operatorOverloading.DBL\operatorOverloading.DBL.csproj", "{D1BB0EAC-1C65-41DF-8E42-050CA49FADEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperatorOverloading.Converter", "OperatorOverloading.Converter\OperatorOverloading.Converter.csproj", "{5588E25F-564B-42CB-8358-0DC85F1700AB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperatorOverLoading.Model", "OperatorOverlaoding.Money\OperatorOverLoading.Model.csproj", "{CD80A295-44C6-4E9F-B6D3-F9DF4C7FE6E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,14 +17,14 @@ Global
 		{CFEA441B-2B27-4555-A0C1-94638E924EDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CFEA441B-2B27-4555-A0C1-94638E924EDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CFEA441B-2B27-4555-A0C1-94638E924EDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1BB0EAC-1C65-41DF-8E42-050CA49FADEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1BB0EAC-1C65-41DF-8E42-050CA49FADEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1BB0EAC-1C65-41DF-8E42-050CA49FADEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1BB0EAC-1C65-41DF-8E42-050CA49FADEB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CD80A295-44C6-4E9F-B6D3-F9DF4C7FE6E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CD80A295-44C6-4E9F-B6D3-F9DF4C7FE6E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD80A295-44C6-4E9F-B6D3-F9DF4C7FE6E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD80A295-44C6-4E9F-B6D3-F9DF4C7FE6E7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5588E25F-564B-42CB-8358-0DC85F1700AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5588E25F-564B-42CB-8358-0DC85F1700AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5588E25F-564B-42CB-8358-0DC85F1700AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5588E25F-564B-42CB-8358-0DC85F1700AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
