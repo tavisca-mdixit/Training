@@ -68,7 +68,7 @@ namespace OperatorOverloading
             }
             private set
             {
-                if ((value.Length == 3) == false)
+                if (string.IsNullOrEmpty(value) == true || (value.Length == 3) == false)
                 {
                     throw new ArgumentException(Messages.InvalidInput);
                 }
@@ -94,7 +94,7 @@ namespace OperatorOverloading
 
         public override string ToString()
         {
-            return base.ToString();
+            return Amount+" "+Currency;
         }
     }
 }
