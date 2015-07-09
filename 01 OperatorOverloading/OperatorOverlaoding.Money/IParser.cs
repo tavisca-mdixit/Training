@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OperatorOverloading.Interface
+namespace OperatorOverLoading.Model
 {
-    public class Class1
+    public interface IParser
     {
+        double GetConversionRate(string from, string to);
     }
+
 }

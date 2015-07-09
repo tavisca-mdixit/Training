@@ -13,13 +13,13 @@ namespace OperatorOverloading
         private string _currency;
         public Money(string currencyAndAmount)
         {
-            if (string.IsNullOrWhiteSpace(currencyAndAmount) == true)
+            if (string.IsNullOrWhiteSpace(currencyAndAmount))
             {
                 throw new ArgumentException(Messages.InvalidInput);
             }
 
             var args = currencyAndAmount.Split(' ');
-            if ((args.Length == 2) == false)
+            if (args.Length != 2)
             {
                 throw new ArgumentException(Messages.InvalidInput);
             }
@@ -29,12 +29,7 @@ namespace OperatorOverloading
             {
                 throw new ArgumentException(Messages.InvalidInput);
             }
-            this.Amount = amount;
-            //Checking for Empty/Null Strings                
-            if (string.IsNullOrEmpty(args[1]) == true)
-            {
-                throw new ArgumentException(Messages.EmptyInput);
-            }
+            this.Amount = amount;                                
             this.Currency = args[1];
         }
 
@@ -67,8 +62,8 @@ namespace OperatorOverloading
                 return _currency;
             }
             private set
-            {
-                if (string.IsNullOrEmpty(value) == true || (value.Length == 3) == false)
+            {                
+                if (string.IsNullOrEmpty(value)|| (value.Length != 3) )
                 {
                     throw new ArgumentException(Messages.InvalidInput);
                 }
@@ -92,9 +87,13 @@ namespace OperatorOverloading
             return new Money(amount, moneyOne.Currency);
         }
 
+
+
         public override string ToString()
         {
-            return Amount+" "+Currency;
+            return Amount + " " + Currency;
         }
+
+
     }
 }
