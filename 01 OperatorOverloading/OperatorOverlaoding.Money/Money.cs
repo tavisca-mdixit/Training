@@ -19,7 +19,7 @@ namespace OperatorOverloading
             }
             else
             {
-                Console.WriteLine("The Value Entered is Incorrect");
+                throw new ArgumentException(Messages.InvalidInput);
             }
             //Checking for Empty/Null Strings                
             if (string.IsNullOrWhiteSpace(args[1]) == true)
