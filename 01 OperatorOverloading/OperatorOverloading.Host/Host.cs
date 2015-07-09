@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using OperatorOverloading;
 using System.IO;
-using OperatorOverloading.Host;
+using operatorOverloading;
 
 namespace OperatorOverloading
 {
@@ -13,33 +13,24 @@ namespace OperatorOverloading
     {
         static void Main(string[] args)
         {
-            
-            string currencyAndAmount;
-            Money moneyOne;
-            Money moneyTwo;
             try
             {
                 Console.WriteLine("Enter the amount and the Curreny type,, ex:  100 USD ");
-                currencyAndAmount = Console.ReadLine();
-
                 //Calling the Parameterized constructor of Money Class
-                moneyOne = new Money(currencyAndAmount);
+                var moneyOne = new Money(Console.ReadLine());
 
                 Console.WriteLine("Enter the amount and the Curreny type,, ex:  100 USD");
-                currencyAndAmount = Console.ReadLine();
-
                 //Calling the Parameterized constructor of Money Class
-                moneyTwo = new Money(currencyAndAmount);
+                var moneyTwo = new Money(Console.ReadLine());
 
-                //Overloading the Plus operator           
-                var moneyThree = moneyTwo + moneyOne;
-                Console.WriteLine("The Currency and Amount is : {0}  {1}", moneyThree.Currency, moneyThree.Amount);
+                //Overloading the Plus operator          
+                Console.WriteLine(moneyTwo + moneyOne);
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.StackTrace);
+                Console.WriteLine(e.Message);
             }
-            Console.ReadKey();                          
+            Console.ReadKey();
         }
     }
 }

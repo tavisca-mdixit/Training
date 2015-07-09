@@ -117,13 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="EmptyInput" xml:space="preserve">
+    <value>The Input Entered is Empty</value>
+  </data>
   <data name="InputNotEqual" xml:space="preserve">
     <value>Strings Entered are not equal</value>
   </data>
   <data name="InvalidInput" xml:space="preserve">
-    <value>Amount entered invalid</value>
-  </data>
-  <data name="NullInput" xml:space="preserve">
-    <value>String entered is Null/Empty</value>
+    <value>Input Entered is Incorrect</value>
   </data>
 </root>

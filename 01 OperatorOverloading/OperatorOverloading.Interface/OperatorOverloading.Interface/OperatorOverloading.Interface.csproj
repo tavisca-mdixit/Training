@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CFEA441B-2B27-4555-A0C1-94638E924EDB}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{363BEAF3-0F85-4D15-A9BA-796C7DF9F948}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>OperatorOverloading.Host</RootNamespace>
-    <AssemblyName>OperatorOverloading.Host</AssemblyName>
+    <RootNamespace>OperatorOverloading.Interface</RootNamespace>
+    <AssemblyName>OperatorOverloading.Interface</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -41,24 +39,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Host.cs" />
+    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Service References\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\OperatorOverlaoding.Money\OperatorOverLoading.Model.csproj">
-      <Project>{cd80a295-44c6-4e9f-b6d3-f9df4c7fe6e7}</Project>
-      <Name>OperatorOverLoading.Model</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\OperatorOverloading.Interface\operatorOverloading.DBL\operatorOverloading.DBL.csproj">
-      <Project>{d1bb0eac-1c65-41df-8e42-050ca49fadeb}</Project>
-      <Name>operatorOverloading.DBL</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
