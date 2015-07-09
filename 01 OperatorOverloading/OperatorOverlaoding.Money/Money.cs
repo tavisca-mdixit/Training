@@ -28,7 +28,6 @@ namespace OperatorOverloading
             while ((double.TryParse(args[0], out temporaryAmount)) == false)
             {
                 throw new ArgumentException(Messages.InvalidInput);
-
             }
             this.Amount = temporaryAmount;
             //Checking for Empty/Null Strings                
