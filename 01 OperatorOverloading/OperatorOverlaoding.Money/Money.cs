@@ -24,26 +24,26 @@ namespace OperatorOverloading
                 throw new ArgumentException(Messages.InvalidInput);
             }
 
-            double temporaryAmount;
-            while ((double.TryParse(args[0], out temporaryAmount)) == false)
+            double amount;
+            while ((double.TryParse(args[0], out amount)) == false)
             {
                 throw new ArgumentException(Messages.InvalidInput);
             }
-            this.Amount = temporaryAmount;
+            this.Amount = amount;
             //Checking for Empty/Null Strings                
             if (string.IsNullOrEmpty(args[1]) == true)
             {
                 throw new ArgumentException(Messages.EmptyInput);
             }
-           
-
             this.Currency = args[1];
         }
+
         public Money(double amount, string currency)
         {
             this.Amount = amount;
             this.Currency = currency;
         }
+
         public double Amount
         {
             get
@@ -52,13 +52,14 @@ namespace OperatorOverloading
             }
             private set
             {  //Checking for Negative and Positive Infinity values
-                if (value < 0 || double.IsInfinity(value))
+                if (value < 0 || double.IsInfinity(value) || value > double.MaxValue)
                 {
                     throw new ArgumentException(Messages.InvalidInput);
                 }
                 _amount = value;
             }
         }
+
         public string Currency
         {
             get
@@ -74,6 +75,7 @@ namespace OperatorOverloading
                 _currency = value;
             }
         }
+
         public static Money operator +(Money moneyOne, Money moneyTwo)
         {   //Checking for null objects 
 
