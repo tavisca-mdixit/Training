@@ -35,10 +35,7 @@ namespace OperatorOverloading
             {
                 throw new ArgumentException(Messages.EmptyInput);
             }
-            if ((args[1].Length == 3) == false)
-            {
-                throw new ArgumentException(Messages.InvalidInput);
-            }
+           
 
             this.Currency = args[1];
         }
@@ -70,6 +67,10 @@ namespace OperatorOverloading
             }
             private set
             {
+                if ((value.Length == 3) == false)
+                {
+                    throw new ArgumentException(Messages.InvalidInput);
+                }
                 _currency = value;
             }
         }
@@ -88,9 +89,10 @@ namespace OperatorOverloading
             double amount = moneyOne.Amount + moneyTwo.Amount;
             return new Money(amount, moneyOne.Currency);
         }
-        override public string ToString()
+
+        public override string ToString()
         {
-            return Amount + "  " + Currency;
+            return base.ToString();
         }
     }
 }
