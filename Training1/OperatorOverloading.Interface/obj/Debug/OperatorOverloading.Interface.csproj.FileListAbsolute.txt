@@ -1,0 +1,5 @@
+D:\Training1\Training1\OperatorOverloading.Interface\bin\Debug\OperatorOverloading.Interface.dll
+D:\Training1\Training1\OperatorOverloading.Interface\bin\Debug\OperatorOverloading.Interface.pdb
+D:\Training1\Training1\OperatorOverloading.Interface\obj\Debug\OperatorOverloading.Interface.dll
+D:\Training1\Training1\OperatorOverloading.Interface\obj\Debug\OperatorOverloading.Interface.pdb
+D:\Training1\Training1\OperatorOverloading.Interface\obj\Debug\OperatorOverloading.Interface.csprojResolveAssemblyReference.cache
