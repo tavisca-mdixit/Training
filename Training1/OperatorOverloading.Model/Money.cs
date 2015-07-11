@@ -98,9 +98,7 @@ namespace OperatorOverloading.Model
             }
             FileFetch fetch = new FileFetch();
             CurrencyConverter currencyConverter = new CurrencyConverter(fetch.FileFectcher());
-            var rate = currencyConverter.GetConversionRate(Currency, to);
-            return new Money(Amount * rate, to);
-
+            return new Money(Amount * currencyConverter.GetConversionRate(Currency, to), to);
         }
 
         public override string ToString()
