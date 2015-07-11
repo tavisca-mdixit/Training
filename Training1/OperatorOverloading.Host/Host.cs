@@ -18,10 +18,10 @@ namespace OperatorOverloading.Host
                 var moneyOne = new Money(Console.ReadLine());
 
                 Console.WriteLine("Enter the amount and the Curreny type,, ex:  100 USD");
-                //Calling the Parameterized constructor of Money Class
+                //Calling the Parameterized constructor of Money Class.
                 var moneyTwo = new Money(Console.ReadLine());
 
-                //Overloading the Plus operator          
+                //Overloading the Plus operator.          
                 Console.WriteLine(moneyTwo + moneyOne);
 
                 Console.WriteLine("Enter the amount and Currency type ex: 100 USD");
