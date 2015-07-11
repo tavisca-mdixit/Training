@@ -28,7 +28,7 @@ namespace OperatorOverloading.Host
                 var money = new Money(Console.ReadLine());
                 Console.WriteLine("Enter the currency you want to convert into ex :INR ");
 
-                var val = money.CurrencyConverter(Console.ReadLine());
+                var val = money.Convert(Console.ReadLine());
                 Console.WriteLine(val);
                 Console.ReadKey();
             }

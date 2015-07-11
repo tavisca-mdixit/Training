@@ -89,7 +89,7 @@ namespace OperatorOverloading.Model
             return new Money(amount, moneyOne.Currency);
         }
 
-        public double CurrencyConverter(string to)
+        public double Convert(string to)
         {
             //Checking for null arguements and white spaces and the length of arguement. 
             if (string.IsNullOrWhiteSpace(to) || string.IsNullOrEmpty(to) || to.Length != 3 || Regex.IsMatch(to, @"^[a-zA-Z]+$") == false)
@@ -97,7 +97,7 @@ namespace OperatorOverloading.Model
                 throw new ArgumentException(Messages.InvalidInput);
             }
             FileFetch fetch = new FileFetch();
-            Converter currencyConverter = new Converter(fetch.FileFectcher());
+            CurrencyConverter currencyConverter = new CurrencyConverter(fetch.FileFectcher());
             var rate = currencyConverter.GetConversionRate(Currency, to);
             return Amount * rate;
         }

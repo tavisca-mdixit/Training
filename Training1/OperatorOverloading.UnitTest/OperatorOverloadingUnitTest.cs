@@ -12,7 +12,7 @@ namespace OperatorOverloading.UnitTest
         public void TestMethod1()
         {
             var money = new Money(100, "USD");
-            var amount = money.CurrencyConverter("INR");
+            var amount = money.Convert("INR");
 
             Assert.IsTrue(amount == 6347.345);
         }
@@ -22,7 +22,7 @@ namespace OperatorOverloading.UnitTest
         public void TestMethod2()
         {
             var money = new Money(100, "USD");
-            var amount = money.CurrencyConverter("YEN");
+            var amount = money.Convert("YEN");
         }
 
         [TestMethod]
@@ -30,7 +30,7 @@ namespace OperatorOverloading.UnitTest
         public void TestMethod3()
         {
             var money = new Money(100, "USD");
-            var amount = money.CurrencyConverter("IN");
+            var amount = money.Convert("IN");
 
         }
         [TestMethod]
@@ -38,7 +38,7 @@ namespace OperatorOverloading.UnitTest
         public void TestMethod4()
         {
             var money = new Money(100, "USD");
-            var amount = money.CurrencyConverter("");
+            var amount = money.Convert("");
 
         }
 
@@ -47,7 +47,7 @@ namespace OperatorOverloading.UnitTest
         public void TestMethod5()
         {
             var money = new Money(100, "USD");
-            var amount = money.CurrencyConverter("\0");
+            var amount = money.Convert("\0");
 
         }
         [TestMethod]
@@ -55,7 +55,7 @@ namespace OperatorOverloading.UnitTest
         public void TestMethod6()
         {
             var money = new Money(100, "USD");
-            var amount = money.CurrencyConverter("   ");
+            var amount = money.Convert("   ");
 
         }
         [TestMethod]
@@ -63,7 +63,7 @@ namespace OperatorOverloading.UnitTest
         public void TestMethod7()
         {
             var money = new Money(100, "INR");
-            var amount = money.CurrencyConverter("AFN");
+            var amount = money.Convert("AFN");
 
         }
         [TestMethod]
@@ -71,7 +71,7 @@ namespace OperatorOverloading.UnitTest
         public void TestMethod8()
         {
             var money = new Money(100, "INR");
-            var amount = money.CurrencyConverter("AFN");
+            var amount = money.Convert("AFN");
 
         }
         [TestMethod]
@@ -79,7 +79,7 @@ namespace OperatorOverloading.UnitTest
         public void TestMethod9()
         {
             var money = new Money(100, "INR");
-            var amount = money.CurrencyConverter("YEN");
+            var amount = money.Convert("YEN");
 
         }
         [TestMethod]
@@ -87,7 +87,7 @@ namespace OperatorOverloading.UnitTest
         public void TestMethod10()
         {
             var money = new Money(100, "YEN");
-            var amount = money.CurrencyConverter("INR");
+            var amount = money.Convert("INR");
 
         }
         [TestMethod]
@@ -95,35 +95,35 @@ namespace OperatorOverloading.UnitTest
         public void TestMethod11()
         {
             var money = new Money(100, "USD");
-            var amount = money.CurrencyConverter("YEN");
+            var amount = money.Convert("YEN");
 
         }
         [TestMethod]
         [ExpectedException(typeof(FileLoadException))]
         public void TestMethod13()
         {
-            Converter convert = new Converter("  ");
+            CurrencyConverter convert = new CurrencyConverter("  ");
             convert.GetConversionRate("INR", "USD");
         }
         [TestMethod]
         [ExpectedException(typeof(FileLoadException))]
         public void TestMethod14()
         {
-            Converter convert = new Converter("");
+            CurrencyConverter convert = new CurrencyConverter("");
             convert.GetConversionRate("INR", "USD");
         }
         [TestMethod]
         [ExpectedException(typeof(System.ArgumentException))]
         public void TestMethod15()
         {
-            Converter convert = new Converter("ABCD");
+            CurrencyConverter convert = new CurrencyConverter("ABCD");
             convert.GetConversionRate("  ", "   ");
         }
         [TestMethod]
         [ExpectedException(typeof(System.ArgumentException))]
         public void TestMethod16()
         {
-            Converter convert = new Converter("ABCD");
+            CurrencyConverter convert = new CurrencyConverter("ABCD");
             convert.GetConversionRate("", "");
         }
 
