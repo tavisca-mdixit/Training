@@ -10,11 +10,11 @@ namespace OperatorOverloading.DBL
     {
         public static double ConversionRate(string[] jsonFileArray, string currency)
         {
-            foreach (string rate in jsonFileArray)
+            foreach (string currencies in jsonFileArray)
             {
-                if (rate.Contains(currency))
+                if (currencies.Contains(currency))
                 {
-                    string[] convertRate = rate.Split(':');
+                    string[] convertRate = currencies.Split(':');
                     //checking the length of the array after split
                     if (convertRate.Length != 2)
                         throw new System.ArgumentOutOfRangeException(Messages.OutOfRange);
