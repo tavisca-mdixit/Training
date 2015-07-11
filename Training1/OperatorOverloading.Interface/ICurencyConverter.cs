@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OperatorOverloading.Interface
 {
-    public interface ICuurencyConverter
+    public interface ICurencyConverter
     {   //Interface for the conversion function;
         double GetConversionRate(string from, string to);
     }

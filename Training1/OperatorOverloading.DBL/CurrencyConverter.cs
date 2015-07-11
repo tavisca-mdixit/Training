@@ -7,7 +7,7 @@ using OperatorOverloading.Interface;
 using System.IO;
 namespace OperatorOverloading.DBL
 {
-    public class CurrencyConverter : ICuurencyConverter
+    public class CurrencyConverter : ICurencyConverter
     {
         private string _jsonFile;
         public string JsonFile
