@@ -29,7 +29,6 @@ namespace OperatorOverloading.Host
                 Console.WriteLine("Enter the currency you want to convert into ex :INR ");
 
                 var val = money.CurrencyConverter(Console.ReadLine());
-                //var val = money.CurrencyConverter("USD","INR");
                 Console.WriteLine(val);
                 Console.ReadKey();
             }
