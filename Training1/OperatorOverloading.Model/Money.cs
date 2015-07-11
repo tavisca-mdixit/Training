@@ -89,7 +89,7 @@ namespace OperatorOverloading.Model
             return new Money(amount, moneyOne.Currency);
         }
 
-        public double Convert(string to)
+        public Money Convert(string to)
         {
             //Checking for null arguements and white spaces and the length of arguement. 
             if (string.IsNullOrWhiteSpace(to) || string.IsNullOrEmpty(to) || to.Length != 3 || Regex.IsMatch(to, @"^[a-zA-Z]+$") == false)
@@ -99,7 +99,8 @@ namespace OperatorOverloading.Model
             FileFetch fetch = new FileFetch();
             CurrencyConverter currencyConverter = new CurrencyConverter(fetch.FileFectcher());
             var rate = currencyConverter.GetConversionRate(Currency, to);
-            return Amount * rate;
+            return new Money(Amount = Amount * rate, to);
+
         }
 
         public override string ToString()
