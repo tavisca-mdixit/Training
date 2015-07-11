@@ -11,10 +11,10 @@ namespace OperatorOverloading.UnitTest
         [TestMethod]
         public void TestMethod1()
         {
-            var money = new Money(100,"USD");
+            var money = new Money(100, "USD");
             var amount = money.CurrencyConverter("INR");
 
-            Assert.IsTrue(amount==6347.345);
+            Assert.IsTrue(amount == 6347.345);
         }
 
         [TestMethod]
@@ -22,7 +22,7 @@ namespace OperatorOverloading.UnitTest
         public void TestMethod2()
         {
             var money = new Money(100, "USD");
-            var amount = money.CurrencyConverter("YEN");    
+            var amount = money.CurrencyConverter("YEN");
         }
 
         [TestMethod]
@@ -99,18 +99,11 @@ namespace OperatorOverloading.UnitTest
 
         }
         [TestMethod]
-        [ExpectedException(typeof(NullReferenceException))]
-        public void TestMethod12()
-        {
-            Money money = null;
-            var amount = money.CurrencyConverter("YEN");
-        }
-        [TestMethod]
         [ExpectedException(typeof(FileLoadException))]
         public void TestMethod13()
         {
             Converter convert = new Converter("  ");
-            convert.GetConversionRate("INR", "USD");        
+            convert.GetConversionRate("INR", "USD");
         }
         [TestMethod]
         [ExpectedException(typeof(FileLoadException))]
@@ -131,7 +124,7 @@ namespace OperatorOverloading.UnitTest
         public void TestMethod16()
         {
             Converter convert = new Converter("ABCD");
-            convert.GetConversionRate("","");
+            convert.GetConversionRate("", "");
         }
 
 

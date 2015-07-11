@@ -13,16 +13,17 @@ namespace OperatorOverloading.Host
         {
             try
             {
-            //    Console.WriteLine("Enter the amount and the Curreny type,, ex:  100 USD ");
-            //    //Calling the Parameterized constructor of Money Class
-            //    var moneyOne = new Money(Console.ReadLine());
+                Console.WriteLine("Enter the amount and the Curreny type,, ex:  100 USD ");
+                //Calling the Parameterized constructor of Money Class
+                var moneyOne = new Money(Console.ReadLine());
 
-            //    Console.WriteLine("Enter the amount and the Curreny type,, ex:  100 USD");
-            //    //Calling the Parameterized constructor of Money Class
-            //    var moneyTwo = new Money(Console.ReadLine());
+                Console.WriteLine("Enter the amount and the Curreny type,, ex:  100 USD");
+                //Calling the Parameterized constructor of Money Class
+                var moneyTwo = new Money(Console.ReadLine());
 
-            //    //Overloading the Plus operator          
-            //    Console.WriteLine(moneyTwo + moneyOne);
+                //Overloading the Plus operator          
+                Console.WriteLine(moneyTwo + moneyOne);
+
                 Console.WriteLine("Enter the amount and Currency type ex: 100 USD");
                 var money = new Money(Console.ReadLine());
                 Console.WriteLine("Enter the currency you want to convert into ex :INR ");
@@ -37,7 +38,7 @@ namespace OperatorOverloading.Host
                 Console.WriteLine(e.Message);
                 Console.ReadKey();
             }
-           
+
         }
     }
 }

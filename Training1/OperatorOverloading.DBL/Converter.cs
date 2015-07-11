@@ -24,6 +24,7 @@ namespace OperatorOverloading.DBL
 
         public Converter(string jsonFile)
         {
+            //Checking for null arguement 
             if (string.IsNullOrEmpty(jsonFile) || string.IsNullOrWhiteSpace(jsonFile))
             {
                 throw new FileLoadException(Messages.LoadUnsuccessful);
@@ -31,23 +32,37 @@ namespace OperatorOverloading.DBL
             JsonFile = jsonFile;
         }
 
+        //Method to get the conversion rate 
         public double GetConversionRate(string from, string to)
         {
+            //Checking for valid arguements
             if (string.IsNullOrWhiteSpace(from) || string.IsNullOrWhiteSpace(to) || from.Length != 3 && to.Length != 3)
             {
                 throw new System.ArgumentException(Messages.InvalidInput);
             }
+
+            //Splitting the jsonFile           
             string[] jsonFileArray = _jsonFile.Split('{', ',', '}');
+
+            //If to and from currency are same
+            if (string.Equals(to, from, StringComparison.OrdinalIgnoreCase))
+            {
+                return 1;
+            }
+
+            //Calling the convert function to convert from USD 
             if (string.Equals(from, "USD", StringComparison.OrdinalIgnoreCase))
             {
-                var rate = FromUSD(jsonFileArray, from, to);
-                return rate;
+                return CurrencyParser.ConversionRate(jsonFileArray, to.ToUpper());
             }
+
+            //Calling the convert function to conver to USD
             else if (string.Equals(to, "USD", StringComparison.OrdinalIgnoreCase))
             {
-                var rate = ToUSD(jsonFileArray, from, to);
-                return rate;
+                return 1 / CurrencyParser.ConversionRate(jsonFileArray, from.ToUpper());
             }
+
+            //Throwing Exception if none of the currency is USD
             else
             {
                 throw new System.ArgumentException(Messages.InvalidCurrency);
@@ -55,39 +70,5 @@ namespace OperatorOverloading.DBL
 
         }
 
-        public double FromUSD(string[] jsonFileArray, string from, string to)
-        {
-            foreach (string i in jsonFileArray)
-            {
-                if (i.Contains(to.ToUpper()))
-                {
-                    if (string.Equals(from, to, StringComparison.OrdinalIgnoreCase))
-                    {
-                        return 1;
-                    }
-
-                    string[] converRate = i.Split(':');
-                    return Convert.ToDouble(converRate[1]);
-                }
-            }
-            throw new System.ArgumentOutOfRangeException(Messages.OutOfRange);
-        }
-
-        public double ToUSD(string[] jsonFileArray, string from, string to)
-        {
-            foreach (string i in jsonFileArray)
-            {
-                if (i.Contains(from.ToUpper()))
-                {
-                    if (string.Equals(from, to, StringComparison.OrdinalIgnoreCase))
-                    {
-                        return 1;
-                    }
-                    string[] converRate = i.Split(':');
-                    return 1 / Convert.ToDouble(converRate[1]);
-                }
-            }
-            throw new System.ArgumentOutOfRangeException(Messages.OutOfRange);
-        }
     }
 }

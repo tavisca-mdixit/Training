@@ -91,25 +91,20 @@ namespace OperatorOverloading.Model
 
         public double CurrencyConverter(string to)
         {
-            if (this == null)
-            {
-                throw new NullReferenceException();
-            }
-            if (string.IsNullOrWhiteSpace(to) || string.IsNullOrEmpty(to) || to.Length != 3 || Regex.IsMatch(to, @"^[a-zA-Z]+$")==false)
+            //Checking for null arguements and white spaces and the length of arguement. 
+            if (string.IsNullOrWhiteSpace(to) || string.IsNullOrEmpty(to) || to.Length != 3 || Regex.IsMatch(to, @"^[a-zA-Z]+$") == false)
             {
                 throw new ArgumentException(Messages.InvalidInput);
-            }          
-            FileFetch fetch = new FileFetch();          
+            }
+            FileFetch fetch = new FileFetch();
             Converter currencyConverter = new Converter(fetch.FileFectcher());
-            var rate = currencyConverter.GetConversionRate(this.Currency, to);
-            return this.Amount * rate;
+            var rate = currencyConverter.GetConversionRate(Currency, to);
+            return Amount * rate;
         }
 
         public override string ToString()
         {
             return Amount + " " + Currency;
         }
-
-
     }
 }

@@ -9,9 +9,13 @@ namespace OperatorOverloading.FileFectcher
     public class FileFetch
     {
         public string FileFectcher()
-        {
-            string jsonFile = File.ReadAllText("C:/Users/mdixit/Desktop/json.txt");
-            return jsonFile;
+        {   //Fetching the file into a string
+            if (File.Exists("C:/Users/mdixit/Desktop/json.txt"))
+            {
+                string jsonFile = File.ReadAllText("C:/Users/mdixit/Desktop/json.txt");
+                return jsonFile;
+            }
+            throw new FileNotFoundException(Messages.FileNotFound);
         }
     }
 }
