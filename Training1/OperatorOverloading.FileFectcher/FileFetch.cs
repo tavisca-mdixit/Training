@@ -12,7 +12,6 @@ namespace OperatorOverloading.FileFectcher
 
         public string FileFectcher()
         {   //Fetching the file into a string
-            Console.WriteLine(baseUrl);
             if (File.Exists(baseUrl))
             {
                 string jsonFile = File.ReadAllText(baseUrl);
