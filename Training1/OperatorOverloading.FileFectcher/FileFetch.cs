@@ -4,15 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.Configuration;
 namespace OperatorOverloading.FileFectcher
 {
     public class FileFetch
-    {
+    {   public string baseUrl = System.Configuration.ConfigurationManager.AppSettings["baseUrl"];
+
         public string FileFectcher()
         {   //Fetching the file into a string
-            if (File.Exists("C:/Users/mdixit/Desktop/json.txt"))
+            Console.WriteLine(baseUrl);
+            if (File.Exists(baseUrl))
             {
-                string jsonFile = File.ReadAllText("C:/Users/mdixit/Desktop/json.txt");
+                string jsonFile = File.ReadAllText(baseUrl);
                 return jsonFile;
             }
             throw new FileNotFoundException(Messages.FileNotFound);

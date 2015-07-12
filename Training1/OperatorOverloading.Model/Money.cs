@@ -88,7 +88,12 @@ namespace OperatorOverloading.Model
             double amount = moneyOne.Amount + moneyTwo.Amount;
             return new Money(amount, moneyOne.Currency);
         }
-
+        /// <summary>
+        /// Taking to as destionation currency
+        ///And calling GetConversionRate on currenct object and destination currency
+        /// </summary>
+        /// <param name="to"></param>
+        /// <returns></returns>
         public Money Convert(string to)
         {
             //Checking for null arguements and white spaces and the length of arguement. 

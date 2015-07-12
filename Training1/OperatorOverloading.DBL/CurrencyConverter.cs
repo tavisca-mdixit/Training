@@ -22,6 +22,10 @@ namespace OperatorOverloading.DBL
             }
         }
 
+        /// <summary>
+        ///Taking the whole json file in a string named jsonfile 
+        /// </summary>
+        /// <param name="jsonFile"></param>
         public CurrencyConverter(string jsonFile)
         {
             //Checking for null arguement 
@@ -32,6 +36,11 @@ namespace OperatorOverloading.DBL
             JsonFile = jsonFile;
         }
 
+        /// <summary>
+        ///Taking from and to as source and destination strings 
+        /// </summary>
+        /// <param name="from"></param>
+        /// <param name="to"></param>
         //Method to get the conversion rate 
         public double GetConversionRate(string from, string to)
         {

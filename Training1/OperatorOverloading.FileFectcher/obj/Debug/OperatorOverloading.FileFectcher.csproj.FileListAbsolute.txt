@@ -1,4 +1,3 @@
-D:\Training1\Training1\OperatorOverloading.FileFectcher\bin\Debug\OperatorOverloading.FileFectcher.dll.config
 D:\Training1\Training1\OperatorOverloading.FileFectcher\bin\Debug\OperatorOverloading.FileFectcher.dll
 D:\Training1\Training1\OperatorOverloading.FileFectcher\bin\Debug\OperatorOverloading.FileFectcher.pdb
 D:\Training1\Training1\OperatorOverloading.FileFectcher\obj\Debug\OperatorOverloading.FileFectcher.dll
