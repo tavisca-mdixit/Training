@@ -61,6 +61,15 @@ namespace OperatorOverloading.DBL {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Arguement is Null;.
+        /// </summary>
+        internal static string ArguementNull {
+            get {
+                return ResourceManager.GetString("ArguementNull", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Conversion rate can be generated converted to/from USD only.
         /// </summary>
         internal static string InvalidCurrency {

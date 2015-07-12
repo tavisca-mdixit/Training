@@ -49,6 +49,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\OperatorOverloading.FileFectcher\OperatorOverloading.GetFile.csproj">
+      <Project>{fc534218-1ef7-4d31-95bf-538112d092a0}</Project>
+      <Name>OperatorOverloading.GetFile</Name>
+    </ProjectReference>
     <ProjectReference Include="..\OperatorOverloading.Interface\OperatorOverloading.Interface.csproj">
       <Project>{a73a270f-618e-43a9-9de1-2d0a14142407}</Project>
       <Name>OperatorOverloading.Interface</Name>

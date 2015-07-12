@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using OperatorOverloading.DBL;
-using OperatorOverloading.FileFectcher;
 using System.Text.RegularExpressions;
 
 namespace OperatorOverloading.Model
@@ -101,8 +100,7 @@ namespace OperatorOverloading.Model
             {
                 throw new ArgumentException(Messages.InvalidInput);
             }
-            FileFetch fetch = new FileFetch();
-            CurrencyConverter currencyConverter = new CurrencyConverter(fetch.FileFectcher());
+            CurrencyConverter currencyConverter = new CurrencyConverter();
             return new Money(Amount * currencyConverter.GetConversionRate(Currency, to), to);
         }
 

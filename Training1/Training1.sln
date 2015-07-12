@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperatorOverloading.Interfa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperatorOverloading.Host", "OperatorOverloading.Host\OperatorOverloading.Host.csproj", "{A2CF9EAD-32DF-4452-ACB1-785345FAEC47}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperatorOverloading.FileFectcher", "OperatorOverloading.FileFectcher\OperatorOverloading.FileFectcher.csproj", "{FC534218-1EF7-4D31-95BF-538112D092A0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperatorOverloading.GetFile", "OperatorOverloading.FileFectcher\OperatorOverloading.GetFile.csproj", "{FC534218-1EF7-4D31-95BF-538112D092A0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperatorOverloading.UnitTest", "OperatorOverloading.UnitTest\OperatorOverloading.UnitTest.csproj", "{97B7BBC0-BDFC-4947-8F95-30A2A7BCC1D7}"
 EndProject

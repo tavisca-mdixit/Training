@@ -52,10 +52,6 @@
       <Project>{76203858-d38c-48fe-b0f2-9e1e44558aaf}</Project>
       <Name>OperatorOverloading.DBL</Name>
     </ProjectReference>
-    <ProjectReference Include="..\OperatorOverloading.FileFectcher\OperatorOverloading.FileFectcher.csproj">
-      <Project>{fc534218-1ef7-4d31-95bf-538112d092a0}</Project>
-      <Name>OperatorOverloading.FileFectcher</Name>
-    </ProjectReference>
     <ProjectReference Include="..\OperatorOverloading.Interface\OperatorOverloading.Interface.csproj">
       <Project>{a73a270f-618e-43a9-9de1-2d0a14142407}</Project>
       <Name>OperatorOverloading.Interface</Name>

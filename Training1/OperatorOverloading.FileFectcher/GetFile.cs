@@ -5,13 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Configuration;
-namespace OperatorOverloading.FileFectcher
-{
-    public class FileFetch
-    {   public string baseUrl = System.Configuration.ConfigurationManager.AppSettings["baseUrl"];
 
-        public string FileFectcher()
-        {   //Fetching the file into a string
+namespace OperatorOverloading.GetJson
+{
+    public class GetFile
+    {   ///Function to get json fromat text into a string
+        public static string GetString()
+        {   //Fetching the file into a string through api.config
+            string baseUrl = ConfigurationManager.AppSettings["baseUrl"];
             if (File.Exists(baseUrl))
             {
                 string jsonFile = File.ReadAllText(baseUrl);

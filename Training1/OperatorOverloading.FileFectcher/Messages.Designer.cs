@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace OperatorOverloading.FileFectcher {
+namespace OperatorOverloading.GetJson {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace OperatorOverloading.FileFectcher {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("OperatorOverloading.FileFectcher.Messages", typeof(Messages).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("OperatorOverloading.GetJson.Messages", typeof(Messages).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -57,6 +57,15 @@ namespace OperatorOverloading.FileFectcher {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string ArguementNull {
+            get {
+                return ResourceManager.GetString("ArguementNull", resourceCulture);
             }
         }
         

@@ -7,8 +7,8 @@
     <ProjectGuid>{FC534218-1EF7-4D31-95BF-538112D092A0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>OperatorOverloading.FileFectcher</RootNamespace>
-    <AssemblyName>OperatorOverloading.FileFectcher</AssemblyName>
+    <RootNamespace>OperatorOverloading.GetJson</RootNamespace>
+    <AssemblyName>OperatorOverloading.GetJson</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -36,6 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -44,7 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FileFetch.cs" />
+    <Compile Include="GetFile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Messages.Designer.cs">
       <AutoGen>True</AutoGen>

@@ -9,33 +9,6 @@ namespace OperatorOverloading.DBL
 {
     public class CurrencyConverter : ICurencyConverter
     {
-        private string _jsonFile;
-        public string JsonFile
-        {
-            get
-            {
-                return _jsonFile;
-            }
-            set
-            {
-                _jsonFile = value;
-            }
-        }
-
-        /// <summary>
-        ///Taking the whole json file in a string named jsonfile 
-        /// </summary>
-        /// <param name="jsonFile"></param>
-        public CurrencyConverter(string jsonFile)
-        {
-            //Checking for null arguement 
-            if (string.IsNullOrEmpty(jsonFile) || string.IsNullOrWhiteSpace(jsonFile))
-            {
-                throw new FileLoadException(Messages.LoadUnsuccessful);
-            }
-            JsonFile = jsonFile;
-        }
-
         /// <summary>
         ///Taking from and to as source and destination strings 
         /// </summary>
@@ -51,24 +24,22 @@ namespace OperatorOverloading.DBL
             }
 
             //Splitting the jsonFile           
-            string[] jsonFileArray = _jsonFile.Split('{', ',', '}');
-
             //If to and from currency are same
             if (string.Equals(to, from, StringComparison.OrdinalIgnoreCase))
             {
                 return 1;
             }
-
+            CurrencyParser currencyParser = new CurrencyParser();
             //Calling the convert function to convert from USD 
-            if (string.Equals(from, "USD", StringComparison.OrdinalIgnoreCase))
+            if (string.Equals(from, currencyParser.GetApiSource(), StringComparison.OrdinalIgnoreCase))
             {
-                return CurrencyParser.ConversionRate(jsonFileArray, to.ToUpper());
+                return currencyParser.ConversionRate(to.ToUpper());
             }
 
             //Calling the convert function to conver to USD
-            else if (string.Equals(to, "USD", StringComparison.OrdinalIgnoreCase))
+            else if (string.Equals(to, currencyParser.GetApiSource(), StringComparison.OrdinalIgnoreCase))
             {
-                return 1 / CurrencyParser.ConversionRate(jsonFileArray, from.ToUpper());
+                return 1 / currencyParser.ConversionRate(from.ToUpper());
             }
 
             //Throwing Exception if none of the currency is USD
