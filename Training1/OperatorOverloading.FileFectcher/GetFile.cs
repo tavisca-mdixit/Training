@@ -10,7 +10,7 @@ namespace OperatorOverloading.GetJson
 {
     public class GetFile
     {   ///Function to get json fromat text into a string
-        public static string GetString()
+        public static string Get()
         {   //Fetching the file into a string through api.config
             string baseUrl = ConfigurationManager.AppSettings["baseUrl"];
             if (File.Exists(baseUrl))

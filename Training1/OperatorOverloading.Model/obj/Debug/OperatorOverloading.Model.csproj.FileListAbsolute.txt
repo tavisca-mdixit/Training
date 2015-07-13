@@ -9,5 +9,5 @@ D:\Training1\Training1\OperatorOverloading.Model\bin\Debug\OperatorOverloading.D
 D:\Training1\Training1\OperatorOverloading.Model\bin\Debug\OperatorOverloading.Interface.pdb
 D:\Training1\Training1\OperatorOverloading.Model\obj\Debug\OperatorOverloading.Model.dll
 D:\Training1\Training1\OperatorOverloading.Model\obj\Debug\OperatorOverloading.Model.pdb
-D:\Training1\Training1\OperatorOverloading.Model\bin\Debug\OperatorOverloading.FileFectcher.dll
-D:\Training1\Training1\OperatorOverloading.Model\bin\Debug\OperatorOverloading.FileFectcher.pdb
+D:\Training1\Training1\OperatorOverloading.Model\bin\Debug\OperatorOverloading.GetJson.dll
+D:\Training1\Training1\OperatorOverloading.Model\bin\Debug\OperatorOverloading.GetJson.pdb

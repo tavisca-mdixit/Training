@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using OperatorOverloading.GetFile;
+using OperatorOverloading.GetJson;
 using System.IO;
 namespace OperatorOverloading.DBL
 {
@@ -27,7 +27,7 @@ namespace OperatorOverloading.DBL
         /// </summary>
         public CurrencyParser()
         {
-            var jsonFile = GetFile.GetF();
+            var jsonFile = GetFile.Get();
             if (string.IsNullOrEmpty(jsonFile) || string.IsNullOrWhiteSpace(jsonFile))
             {
                 throw new FileLoadException(Messages.LoadUnsuccessful);
@@ -65,7 +65,7 @@ namespace OperatorOverloading.DBL
         /// <returns></returns>
         public string GetApiSource()
         {
-            string[] jsonFileArray = JsonFile.Split('{','}', ',');
+            string[] jsonFileArray = JsonFile.Split('{', '}', ',');
             if (jsonFileArray == null || jsonFileArray.Length == 0)
                 throw new System.ArgumentNullException(Messages.ArguementNull);
             foreach (string currencies in jsonFileArray)
@@ -76,7 +76,6 @@ namespace OperatorOverloading.DBL
                     //checking the length of the array after split
                     if (apiSource.Length != 2)
                         throw new System.ArgumentOutOfRangeException(Messages.OutOfRange);
-                    Console.WriteLine(apiSource[1].Trim('"')); 
                     return apiSource[1].Trim('"');
                 }
             }
