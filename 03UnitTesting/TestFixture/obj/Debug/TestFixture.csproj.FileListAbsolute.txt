@@ -1,0 +1,7 @@
+D:\Training1\03UnitTesting\TestFixture\bin\Debug\TestFixture.dll
+D:\Training1\03UnitTesting\TestFixture\bin\Debug\TestFixture.pdb
+D:\Training1\03UnitTesting\TestFixture\bin\Debug\TestAttributes.dll
+D:\Training1\03UnitTesting\TestFixture\bin\Debug\TestAttributes.pdb
+D:\Training1\03UnitTesting\TestFixture\obj\Debug\TestFixture.csprojResolveAssemblyReference.cache
+D:\Training1\03UnitTesting\TestFixture\obj\Debug\TestFixture.dll
+D:\Training1\03UnitTesting\TestFixture\obj\Debug\TestFixture.pdb
