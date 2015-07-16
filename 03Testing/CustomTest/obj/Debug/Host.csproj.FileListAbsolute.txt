@@ -1,0 +1,10 @@
+D:\Training1\CustomTest\bin\Debug\CustomTest.exe.config
+D:\Training1\CustomTest\bin\Debug\CustomTest.exe
+D:\Training1\CustomTest\bin\Debug\CustomTest.pdb
+D:\Training1\CustomTest\bin\Debug\TestAttribute.dll
+D:\Training1\CustomTest\bin\Debug\TestClass.dll
+D:\Training1\CustomTest\bin\Debug\TestAttribute.pdb
+D:\Training1\CustomTest\bin\Debug\TestClass.pdb
+D:\Training1\CustomTest\obj\Debug\Host.csprojResolveAssemblyReference.cache
+D:\Training1\CustomTest\obj\Debug\CustomTest.exe
+D:\Training1\CustomTest\obj\Debug\CustomTest.pdb
