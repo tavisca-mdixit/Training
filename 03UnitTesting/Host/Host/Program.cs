@@ -14,10 +14,16 @@ namespace Host
         {
             Console.WriteLine("Enter the Category type:");
             var category = Console.ReadLine();
-
-            if (string.IsNullOrWhiteSpace(args[0]) || string.IsNullOrWhiteSpace(category))
+            try
             {
-                throw new ArgumentException("Invalid Input");
+                if (string.IsNullOrWhiteSpace(args[0]) || string.IsNullOrWhiteSpace(category))
+                {
+                    throw new ArgumentException("Invalid Input");
+                }
+            }
+            catch (ArgumentException e)
+            {
+                Console.WriteLine(e.Message);
             }
             Assembly assembly = Assembly.LoadFrom(args[0]);
 
