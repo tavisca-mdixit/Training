@@ -18,7 +18,7 @@ namespace Host
             {
                 if (string.IsNullOrWhiteSpace(args[0]) || string.IsNullOrWhiteSpace(category))
                 {
-                    throw new ArgumentException("Invalid Input");
+                    throw new ArgumentException("Invalid Input Entered");
                 }
             }
             catch (ArgumentException e)
