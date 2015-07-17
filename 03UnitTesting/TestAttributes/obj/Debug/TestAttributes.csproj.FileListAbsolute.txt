@@ -1,0 +1,5 @@
+D:\Training1\03UnitTesting\TestAttributes\bin\Debug\TestAttributes.dll
+D:\Training1\03UnitTesting\TestAttributes\bin\Debug\TestAttributes.pdb
+D:\Training1\03UnitTesting\TestAttributes\obj\Debug\TestAttributes.csprojResolveAssemblyReference.cache
+D:\Training1\03UnitTesting\TestAttributes\obj\Debug\TestAttributes.dll
+D:\Training1\03UnitTesting\TestAttributes\obj\Debug\TestAttributes.pdb

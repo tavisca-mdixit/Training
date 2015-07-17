@@ -1,0 +1,10 @@
+D:\Training1\03UnitTesting\Host\Host\bin\Debug\Host.exe.config
+D:\Training1\03UnitTesting\Host\Host\bin\Debug\Host.exe
+D:\Training1\03UnitTesting\Host\Host\bin\Debug\Host.pdb
+D:\Training1\03UnitTesting\Host\Host\bin\Debug\TestAttributes.dll
+D:\Training1\03UnitTesting\Host\Host\bin\Debug\TestFixture.dll
+D:\Training1\03UnitTesting\Host\Host\bin\Debug\TestAttributes.pdb
+D:\Training1\03UnitTesting\Host\Host\bin\Debug\TestFixture.pdb
+D:\Training1\03UnitTesting\Host\Host\obj\Debug\Host.csprojResolveAssemblyReference.cache
+D:\Training1\03UnitTesting\Host\Host\obj\Debug\Host.exe
+D:\Training1\03UnitTesting\Host\Host\obj\Debug\Host.pdb
