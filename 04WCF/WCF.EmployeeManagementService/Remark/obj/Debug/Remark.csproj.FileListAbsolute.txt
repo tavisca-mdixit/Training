@@ -1,0 +1,5 @@
+D:\Training1\04WCF\WCF.EmployeeManagementService\Remark\obj\Debug\Remark.csprojResolveAssemblyReference.cache
+D:\Training1\04WCF\WCF.EmployeeManagementService\Remark\bin\Debug\namespace Tavisca.EmployeeManagement.BusinessLayer.dll
+D:\Training1\04WCF\WCF.EmployeeManagementService\Remark\bin\Debug\namespace Tavisca.EmployeeManagement.BusinessLayer.pdb
+D:\Training1\04WCF\WCF.EmployeeManagementService\Remark\obj\Debug\namespace Tavisca.EmployeeManagement.BusinessLayer.dll
+D:\Training1\04WCF\WCF.EmployeeManagementService\Remark\obj\Debug\namespace Tavisca.EmployeeManagement.BusinessLayer.pdb
