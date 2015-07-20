@@ -1,14 +1,9 @@
-﻿body{
-
-	text-align:center;
-	
+﻿body {
+    text-align: center;
 }
 
-.box{
-
-	text-align:left;
-	width:auto;
-	height:auto;
-	
+.box {
+    text-align: left;
+    width: auto;
+    height: auto;
 }
-

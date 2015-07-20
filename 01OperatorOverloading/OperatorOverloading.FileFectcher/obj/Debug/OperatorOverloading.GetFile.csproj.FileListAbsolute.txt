@@ -1,0 +1,16 @@
+D:\Training1\Training1\OperatorOverloading.FileFectcher\obj\Debug\OperatorOverloading.GetFile.csproj.GenerateResource.Cache
+D:\Training1\Training1\OperatorOverloading.FileFectcher\bin\Debug\OperatorOverloading.GetJson.dll
+D:\Training1\Training1\OperatorOverloading.FileFectcher\bin\Debug\OperatorOverloading.GetJson.pdb
+D:\Training1\Training1\OperatorOverloading.FileFectcher\obj\Debug\OperatorOverloading.GetFile.csprojResolveAssemblyReference.cache
+D:\Training1\Training1\OperatorOverloading.FileFectcher\obj\Debug\OperatorOverloading.GetJson.Messages.resources
+D:\Training1\Training1\OperatorOverloading.FileFectcher\obj\Debug\OperatorOverloading.GetJson.dll
+D:\Training1\Training1\OperatorOverloading.FileFectcher\obj\Debug\OperatorOverloading.GetJson.pdb
+D:\Training1\OperatorOverloading.FileFectcher\bin\Debug\OperatorOverloading.GetJson.dll
+D:\Training1\OperatorOverloading.FileFectcher\bin\Debug\OperatorOverloading.GetJson.pdb
+D:\Training1\OperatorOverloading.FileFectcher\bin\Debug\Newtonsoft.Json.dll
+D:\Training1\OperatorOverloading.FileFectcher\bin\Debug\Newtonsoft.Json.xml
+D:\Training1\OperatorOverloading.FileFectcher\obj\Debug\OperatorOverloading.GetFile.csprojResolveAssemblyReference.cache
+D:\Training1\OperatorOverloading.FileFectcher\obj\Debug\OperatorOverloading.GetJson.Messages.resources
+D:\Training1\OperatorOverloading.FileFectcher\obj\Debug\OperatorOverloading.GetFile.csproj.GenerateResource.Cache
+D:\Training1\OperatorOverloading.FileFectcher\obj\Debug\OperatorOverloading.GetJson.dll
+D:\Training1\OperatorOverloading.FileFectcher\obj\Debug\OperatorOverloading.GetJson.pdb

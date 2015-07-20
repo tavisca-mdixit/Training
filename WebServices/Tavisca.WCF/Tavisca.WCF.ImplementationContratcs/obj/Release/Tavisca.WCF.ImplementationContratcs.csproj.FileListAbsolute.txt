@@ -1,0 +1,5 @@
+D:\Training1\WebServices\Tavisca.WCF\Tavisca.WCF.ImplementationContratcs\bin\Release\Tavisca.WCF.ImplementationContratcs.dll
+D:\Training1\WebServices\Tavisca.WCF\Tavisca.WCF.ImplementationContratcs\bin\Release\Tavisca.WCF.ImplementationContratcs.pdb
+D:\Training1\WebServices\Tavisca.WCF\Tavisca.WCF.ImplementationContratcs\obj\Release\Tavisca.WCF.ImplementationContratcs.dll
+D:\Training1\WebServices\Tavisca.WCF\Tavisca.WCF.ImplementationContratcs\obj\Release\Tavisca.WCF.ImplementationContratcs.pdb
+D:\Training1\WebServices\Tavisca.WCF\Tavisca.WCF.ImplementationContratcs\obj\Release\Tavisca.WCF.ImplementationContratcs.csprojResolveAssemblyReference.cache

@@ -1,0 +1,4 @@
+D:\Training1\04WCF\WCF.EmployeeManagementService\Factory\bin\Debug\Factory.dll
+D:\Training1\04WCF\WCF.EmployeeManagementService\Factory\bin\Debug\Factory.pdb
+D:\Training1\04WCF\WCF.EmployeeManagementService\Factory\obj\Debug\Factory.dll
+D:\Training1\04WCF\WCF.EmployeeManagementService\Factory\obj\Debug\Factory.pdb

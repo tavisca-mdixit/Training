@@ -1,0 +1,8 @@
+D:\Training1\04WCF\WCF.EmployeeManagementService\ServiceLayer.ServiceContracts\bin\Debug\ServiceLayer.ServiceContracts.dll.config
+D:\Training1\04WCF\WCF.EmployeeManagementService\ServiceLayer.ServiceContracts\bin\Debug\ServiceLayer.ServiceContracts.dll
+D:\Training1\04WCF\WCF.EmployeeManagementService\ServiceLayer.ServiceContracts\bin\Debug\ServiceLayer.ServiceContracts.pdb
+D:\Training1\04WCF\WCF.EmployeeManagementService\ServiceLayer.ServiceContracts\bin\Debug\ServiceLayer.DataContracts.dll
+D:\Training1\04WCF\WCF.EmployeeManagementService\ServiceLayer.ServiceContracts\bin\Debug\ServiceLayer.DataContracts.pdb
+D:\Training1\04WCF\WCF.EmployeeManagementService\ServiceLayer.ServiceContracts\obj\Debug\ServiceLayer.ServiceContracts.csprojResolveAssemblyReference.cache
+D:\Training1\04WCF\WCF.EmployeeManagementService\ServiceLayer.ServiceContracts\obj\Debug\ServiceLayer.ServiceContracts.dll
+D:\Training1\04WCF\WCF.EmployeeManagementService\ServiceLayer.ServiceContracts\obj\Debug\ServiceLayer.ServiceContracts.pdb

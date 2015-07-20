@@ -1,0 +1,1 @@
+D:\Training1\04WCF\WCF.EmployeeManagementService\ServiceLayer.Translators\obj\Debug\ServiceLayer.Translators.csprojResolveAssemblyReference.cache

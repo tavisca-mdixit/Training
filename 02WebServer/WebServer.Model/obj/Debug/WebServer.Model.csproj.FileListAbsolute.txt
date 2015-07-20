@@ -1,0 +1,5 @@
+D:\Training1\WebServer.Model\bin\Debug\WebServer.Model.pdb
+D:\Training1\WebServer.Model\obj\Debug\WebServer.Model.csprojResolveAssemblyReference.cache
+D:\Training1\WebServer.Model\obj\Debug\WebServer.Model.pdb
+D:\Training1\WebServer.Model\bin\Debug\WebServer.Model.dll
+D:\Training1\WebServer.Model\obj\Debug\WebServer.Model.dll

@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Tavisca.WCF.ServiceImpelmentation.Calculate" CodeBehind="Tavisca.WCF.ServiceImpelmentation" %>

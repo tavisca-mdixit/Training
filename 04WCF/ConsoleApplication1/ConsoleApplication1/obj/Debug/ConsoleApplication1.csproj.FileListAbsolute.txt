@@ -1,0 +1,8 @@
+D:\Training1\04WCF\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+D:\Training1\04WCF\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+D:\Training1\04WCF\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+D:\Training1\04WCF\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+D:\Training1\04WCF\ConsoleApplication1\ConsoleApplication1\bin\Debug\Newtonsoft.Json.dll
+D:\Training1\04WCF\ConsoleApplication1\ConsoleApplication1\bin\Debug\Newtonsoft.Json.xml
+D:\Training1\04WCF\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+D:\Training1\04WCF\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
