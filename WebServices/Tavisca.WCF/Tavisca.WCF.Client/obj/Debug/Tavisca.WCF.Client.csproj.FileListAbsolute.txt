@@ -1,0 +1,10 @@
+D:\Training1\WebServices\Tavisca.WCF\Tavisca.WCF.Client\bin\Debug\Tavisca.WCF.Client.exe.config
+D:\Training1\WebServices\Tavisca.WCF\Tavisca.WCF.Client\bin\Debug\Tavisca.WCF.Client.exe
+D:\Training1\WebServices\Tavisca.WCF\Tavisca.WCF.Client\bin\Debug\Tavisca.WCF.Client.pdb
+D:\Training1\WebServices\Tavisca.WCF\Tavisca.WCF.Client\obj\Debug\Tavisca.WCF.Client.csprojResolveAssemblyReference.cache
+D:\Training1\WebServices\Tavisca.WCF\Tavisca.WCF.Client\obj\Debug\Tavisca.WCF.Client.exe
+D:\Training1\WebServices\Tavisca.WCF\Tavisca.WCF.Client\obj\Debug\Tavisca.WCF.Client.pdb
+D:\Training1\WebServices\Tavisca.WCF\Tavisca.WCF.Client\bin\Debug\Tavisca.WCF.Client.exe.manifest
+D:\Training1\WebServices\Tavisca.WCF\Tavisca.WCF.Client\bin\Debug\Tavisca.WCF.Client.application
+D:\Training1\WebServices\Tavisca.WCF\Tavisca.WCF.Client\obj\Debug\Tavisca.WCF.Client.exe.manifest
+D:\Training1\WebServices\Tavisca.WCF\Tavisca.WCF.Client\obj\Debug\Tavisca.WCF.Client.application

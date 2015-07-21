@@ -1,0 +1,1 @@
+D:\Training1\WebServices\Tavisca.WCF\WCF.ServiceImplementation\obj\Debug\WCF.ServiceImplementation.csprojResolveAssemblyReference.cache

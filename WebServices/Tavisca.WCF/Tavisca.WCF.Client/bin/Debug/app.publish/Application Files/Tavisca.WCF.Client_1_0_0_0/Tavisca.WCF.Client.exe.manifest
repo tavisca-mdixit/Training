@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Tavisca.WCF.Client.exe" version="1.0.0.0" publicKeyToken="dac05506868c3952" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Tavisca.WCF.Client" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Tavisca.WCF.Client.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Tavisca.WCF.Client.exe" size="8192">
+      <assemblyIdentity name="Tavisca.WCF.Client" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>+0H5MV+fGWQR/a4JiITjrtqz1b7t8E2gwxUZ7I2O4sE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Tavisca.WCF.Client.exe.config" size="1114">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>EMVetmdmrAan+xadu7ezWdYnfVR9JzsgOxHkf7fa+TA=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=INTERNAL\mdixit" issuerKeyHash="62c6e3a7ed475912d519b3e5de20efe34be4764f" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>Qg7ameyUhs0KnwgltiSik1WQZo7xfpnZKOKCkAgAq7w=</DigestValue></Reference></SignedInfo><SignatureValue>HSbZAdWNmqdFrvMx1WGO/TebDVsKZ1cIWn3GDdyNPbnhB4S0YqTI41pORcUFvRA/4vgYvvPOlFKpI15DfXwmdX9hVBEPjhziF0Jyxd7ikURpv40h3xHdUt8uF4VrweS/BXf5B9lD2TLOX4sSsOeDTH8BZW644GZqC2y1+AO9Tw8=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>sT/49qIr3BMjt350AG5qND6cpF6JRYzAgzpozFmKuij+N/JQaql1hjNsury7lWWnowK8pK/wQWhTkGqp/hdqek2xg0oy1s4F1ZYk3gf3QC34Xr8EUBWdZAkoCGC+p7RQDWcYYgXSf9TxKDanZ6QKqSNZ6FPVPwhUllsUDQHFp7k=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="bcab00089082e228d9997ef18e66905593a224b625089f0acd8694ec99da0e42" Description="" Url=""><as:assemblyIdentity name="Tavisca.WCF.Client.exe" version="1.0.0.0" publicKeyToken="dac05506868c3952" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=INTERNAL\mdixit</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>YAkpyjh8kbq8u8AP0F+qvg6LWI8TKP8dFs4VHqc092M=</DigestValue></Reference></SignedInfo><SignatureValue>VZvAEmlirh8NB6Gm5XQJNG6XqaMycceOe4t81s5/jcppRY7cbdnhrsH/nb7urhI9wNwomrEIKkHXjkv+T/TyuYeSU3VnhTF2VUtyz0osMXqzLAyWemLw+URF10AfAy/zxZQAtYxGfWHSa+0co9bfpQe9fgH482izB0ufNxA1vqw=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>sT/49qIr3BMjt350AG5qND6cpF6JRYzAgzpozFmKuij+N/JQaql1hjNsury7lWWnowK8pK/wQWhTkGqp/hdqek2xg0oy1s4F1ZYk3gf3QC34Xr8EUBWdZAkoCGC+p7RQDWcYYgXSf9TxKDanZ6QKqSNZ6FPVPwhUllsUDQHFp7k=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB1TCCAT6gAwIBAgIQKtuTOcPk4p5MOUhSlDyitzANBgkqhkiG9w0BAQsFADApMScwJQYDVQQDHh4ASQBOAFQARQBSAE4AQQBMAFwAbQBkAGkAeABpAHQwHhcNMTUwNzE1MDYxODI0WhcNMTYwNzE0MTIxODI0WjApMScwJQYDVQQDHh4ASQBOAFQARQBSAE4AQQBMAFwAbQBkAGkAeABpAHQwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALE/+PaiK9wTI7d+dABuajQ+nKReiUWMwIM6aMxZiroo/jfyUGqpdYYzbLq8u5Vlp6MCvKSv8EFoU5Bqqf4XanpNsYNKMtbOBdWWJN4H90At+F6/BFAVnWQJKAhgvqe0UA1nGGIF0n/U8Sg2p2ekCqkjWehT1T8IVJZbFA0Bxae5AgMBAAEwDQYJKoZIhvcNAQELBQADgYEAaSJf4nYOxlJLDXh/hEoloCJMGFEJDTeS8otA9e1pk6fSMseVYb7Qf0AbUA+iPIuR+t0OwaG6q5qxGMiJv3Gh/VxyqxUrmoqkIbgP8dpPP+MXwkKuG7TCh4WiNTdH0J0qc/WC4qZvjp2IMNm6hRBZV4TedaJyAN2nSjFg80+aDgo=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

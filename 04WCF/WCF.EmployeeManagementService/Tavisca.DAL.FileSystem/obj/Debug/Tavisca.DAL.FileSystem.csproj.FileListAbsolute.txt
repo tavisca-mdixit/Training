@@ -1,0 +1,11 @@
+D:\Training1\04WCF\WCF.EmployeeManagementService\Tavisca.DAL.FileSystem\obj\Debug\Tavisca.DAL.FileSystem.csprojResolveAssemblyReference.cache
+D:\Training1\04WCF\WCF.EmployeeManagementService\Tavisca.DAL.FileSystem\bin\Debug\Tavisca.DAL.FileSystem.dll
+D:\Training1\04WCF\WCF.EmployeeManagementService\Tavisca.DAL.FileSystem\bin\Debug\Tavisca.DAL.FileSystem.pdb
+D:\Training1\04WCF\WCF.EmployeeManagementService\Tavisca.DAL.FileSystem\bin\Debug\Newtonsoft.Json.dll
+D:\Training1\04WCF\WCF.EmployeeManagementService\Tavisca.DAL.FileSystem\bin\Debug\ServiceLayer.DataContracts.dll
+D:\Training1\04WCF\WCF.EmployeeManagementService\Tavisca.DAL.FileSystem\bin\Debug\ServiceLayer.DataContracts.pdb
+D:\Training1\04WCF\WCF.EmployeeManagementService\Tavisca.DAL.FileSystem\bin\Debug\Newtonsoft.Json.xml
+D:\Training1\04WCF\WCF.EmployeeManagementService\Tavisca.DAL.FileSystem\obj\Debug\Tavisca.DAL.FileSystem.dll
+D:\Training1\04WCF\WCF.EmployeeManagementService\Tavisca.DAL.FileSystem\obj\Debug\Tavisca.DAL.FileSystem.pdb
+D:\Training1\04WCF\WCF.EmployeeManagementService\Tavisca.DAL.FileSystem\bin\Debug\Employee.dll
+D:\Training1\04WCF\WCF.EmployeeManagementService\Tavisca.DAL.FileSystem\bin\Debug\Employee.pdb

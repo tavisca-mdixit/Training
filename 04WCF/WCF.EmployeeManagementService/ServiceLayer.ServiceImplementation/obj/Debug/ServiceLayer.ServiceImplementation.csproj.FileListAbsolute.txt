@@ -1,0 +1,1 @@
+D:\Training1\04WCF\WCF.EmployeeManagementService\ServiceLayer.ServiceImplementation\obj\Debug\ServiceLayer.ServiceImplementation.csprojResolveAssemblyReference.cache

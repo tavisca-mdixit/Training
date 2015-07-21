@@ -1,0 +1,13 @@
+D:\Training1\04WCF\WCF.EmployeeManagementService\EmployeeWrapper\bin\Debug\EmployeeWrapper.dll
+D:\Training1\04WCF\WCF.EmployeeManagementService\EmployeeWrapper\bin\Debug\EmployeeWrapper.pdb
+D:\Training1\04WCF\WCF.EmployeeManagementService\EmployeeWrapper\obj\Debug\EmployeeWrapper.csprojResolveAssemblyReference.cache
+D:\Training1\04WCF\WCF.EmployeeManagementService\EmployeeWrapper\obj\Debug\EmployeeWrapper.dll
+D:\Training1\04WCF\WCF.EmployeeManagementService\EmployeeWrapper\obj\Debug\EmployeeWrapper.pdb
+D:\Training1\04WCF\WCF.EmployeeManagementService\EmployeeWrapper\bin\Debug\Employee.dll
+D:\Training1\04WCF\WCF.EmployeeManagementService\EmployeeWrapper\bin\Debug\ServiceLayer.DataContracts.dll
+D:\Training1\04WCF\WCF.EmployeeManagementService\EmployeeWrapper\bin\Debug\Tavisca.DAL.FileSystem.dll
+D:\Training1\04WCF\WCF.EmployeeManagementService\EmployeeWrapper\bin\Debug\Newtonsoft.Json.dll
+D:\Training1\04WCF\WCF.EmployeeManagementService\EmployeeWrapper\bin\Debug\Employee.pdb
+D:\Training1\04WCF\WCF.EmployeeManagementService\EmployeeWrapper\bin\Debug\ServiceLayer.DataContracts.pdb
+D:\Training1\04WCF\WCF.EmployeeManagementService\EmployeeWrapper\bin\Debug\Tavisca.DAL.FileSystem.pdb
+D:\Training1\04WCF\WCF.EmployeeManagementService\EmployeeWrapper\bin\Debug\Newtonsoft.Json.xml
