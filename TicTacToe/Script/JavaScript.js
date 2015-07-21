@@ -1,15 +1,16 @@
-﻿//Global Variables
+﻿//Globally defined Variables
 var painted;
 var content;
 var winningCombinations;
 var turn = 0;
 var theCanvas;
-var element;
-var context;
+var c;
+var cxt;
 var squaresFilled = 0;
-var playAgainCheck;
+var w;
+var y;
 
-//Instanciate Arrays
+//creating two arrays to check for filled and empty TicTacToe boxes
 window.onload = function () {
 
     painted = new Array();
@@ -22,29 +23,30 @@ window.onload = function () {
     }
 }
 
-//Game methods
+//Checking the box clicked and then creating id of that particular to take action. 
+//Used beginpath,lineTo,moveTo,arc,stroke to draw X and O on the TicTacToe Boxes.
 function canvasClicked(canvasNumber) {
     theCanvas = "canvas" + canvasNumber;
-    element = document.getElementById(theCanvas);
-    context = element.getContext("2d");
+    c = document.getElementById(theCanvas);
+    cxt = c.getContext("2d");
 
     if (painted[canvasNumber - 1] == false) {
         if (turn % 2 == 0) {
-            context.beginPath();
-            context.moveTo(10, 10);
-            context.lineTo(40, 40);
-            context.moveTo(40, 10);
-            context.lineTo(10, 40);
-            context.stroke();
-            context.closePath();
+            cxt.beginPath();
+            cxt.moveTo(10, 10);
+            cxt.lineTo(40, 40);
+            cxt.moveTo(40, 10);
+            cxt.lineTo(10, 40);
+            cxt.stroke();
+            cxt.closePath();
             content[canvasNumber - 1] = 'X';
         }
 
         else {
-            context.beginPath();
-            context.arc(25, 25, 20, 0, Math.PI * 2, true);
-            context.stroke();
-            context.closePath();
+            cxt.beginPath();
+            cxt.arc(25, 25, 20, 0, Math.PI * 2, true);
+            cxt.stroke();
+            cxt.closePath();
             content[canvasNumber - 1] = 'O';
         }
 
@@ -64,6 +66,9 @@ function canvasClicked(canvasNumber) {
     }
 
 }
+
+//checking for winnner through the list of winning conditions created.
+//Taking list of lists to define winning condition
 function checkForWinners(symbol) {
 
     for (var a = 0; a < winningCombinations.length; a++) {
@@ -74,9 +79,11 @@ function checkForWinners(symbol) {
     }
 
 }
+//Prompting user to play again
+//If user wants to play ,, reloading the location
 function playAgain() {
-    playAgainCheck = confirm("PLAY AGAIN?");
-    if (playAgainCheck == true) {
+    y = confirm("PLAY AGAIN?");
+    if (y == true) {
         location.reload(true);
     }
 
