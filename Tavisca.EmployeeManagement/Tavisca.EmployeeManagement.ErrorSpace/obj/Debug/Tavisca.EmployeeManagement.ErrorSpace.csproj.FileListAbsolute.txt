@@ -1,0 +1,5 @@
+D:\Wcf\Tavisca-Training-WCF-EMS\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ErrorSpace\bin\Debug\Tavisca.EmployeeManagement.ErrorSpace.dll
+D:\Wcf\Tavisca-Training-WCF-EMS\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ErrorSpace\bin\Debug\Tavisca.EmployeeManagement.ErrorSpace.pdb
+D:\Wcf\Tavisca-Training-WCF-EMS\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ErrorSpace\obj\Debug\Tavisca.EmployeeManagement.ErrorSpace.csprojResolveAssemblyReference.cache
+D:\Wcf\Tavisca-Training-WCF-EMS\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ErrorSpace\obj\Debug\Tavisca.EmployeeManagement.ErrorSpace.dll
+D:\Wcf\Tavisca-Training-WCF-EMS\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ErrorSpace\obj\Debug\Tavisca.EmployeeManagement.ErrorSpace.pdb

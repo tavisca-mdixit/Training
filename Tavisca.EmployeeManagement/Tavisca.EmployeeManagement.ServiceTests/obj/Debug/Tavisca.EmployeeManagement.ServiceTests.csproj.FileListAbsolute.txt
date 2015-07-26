@@ -1,0 +1,1 @@
+D:\Wcf\Tavisca-Training-WCF-EMS\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ServiceTests\obj\Debug\Tavisca.EmployeeManagement.ServiceTests.csprojResolveAssemblyReference.cache

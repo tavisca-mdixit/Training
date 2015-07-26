@@ -1,0 +1,9 @@
+D:\Wcf\Tavisca-Training-WCF-EMS\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.BusinessLogic\bin\Debug\Tavisca.EmployeeManagement.BusinessLogic.dll
+D:\Wcf\Tavisca-Training-WCF-EMS\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.BusinessLogic\bin\Debug\Tavisca.EmployeeManagement.BusinessLogic.pdb
+D:\Wcf\Tavisca-Training-WCF-EMS\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.BusinessLogic\bin\Debug\Tavisca.EmployeeManagement.Interface.dll
+D:\Wcf\Tavisca-Training-WCF-EMS\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.BusinessLogic\bin\Debug\Tavisca.EmployeeManagement.Model.dll
+D:\Wcf\Tavisca-Training-WCF-EMS\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.BusinessLogic\bin\Debug\Tavisca.EmployeeManagement.Interface.pdb
+D:\Wcf\Tavisca-Training-WCF-EMS\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.BusinessLogic\bin\Debug\Tavisca.EmployeeManagement.Model.pdb
+D:\Wcf\Tavisca-Training-WCF-EMS\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.BusinessLogic\obj\Debug\Tavisca.EmployeeManagement.BusinessLogic.csprojResolveAssemblyReference.cache
+D:\Wcf\Tavisca-Training-WCF-EMS\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.BusinessLogic\obj\Debug\Tavisca.EmployeeManagement.BusinessLogic.dll
+D:\Wcf\Tavisca-Training-WCF-EMS\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.BusinessLogic\obj\Debug\Tavisca.EmployeeManagement.BusinessLogic.pdb
