@@ -1,0 +1,9 @@
+D:\Wcf\Tavisca-Training-WCF-EMS\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.Translator\bin\Debug\Tavisca.EmployeeManagement.Translator.dll
+D:\Wcf\Tavisca-Training-WCF-EMS\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.Translator\bin\Debug\Tavisca.EmployeeManagement.Translator.pdb
+D:\Wcf\Tavisca-Training-WCF-EMS\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.Translator\bin\Debug\Tavisca.EmployeeManagement.DataContract.dll
+D:\Wcf\Tavisca-Training-WCF-EMS\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.Translator\bin\Debug\Tavisca.EmployeeManagement.Model.dll
+D:\Wcf\Tavisca-Training-WCF-EMS\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.Translator\bin\Debug\Tavisca.EmployeeManagement.DataContract.pdb
+D:\Wcf\Tavisca-Training-WCF-EMS\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.Translator\bin\Debug\Tavisca.EmployeeManagement.Model.pdb
+D:\Wcf\Tavisca-Training-WCF-EMS\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.Translator\obj\Debug\Tavisca.EmployeeManagement.Translator.csprojResolveAssemblyReference.cache
+D:\Wcf\Tavisca-Training-WCF-EMS\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.Translator\obj\Debug\Tavisca.EmployeeManagement.Translator.dll
+D:\Wcf\Tavisca-Training-WCF-EMS\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.Translator\obj\Debug\Tavisca.EmployeeManagement.Translator.pdb

@@ -1,0 +1,7 @@
+D:\Wcf\Tavisca-Training-WCF-EMS\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ServiceContract\bin\Debug\Tavisca.EmployeeManagement.ServiceContract.dll
+D:\Wcf\Tavisca-Training-WCF-EMS\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ServiceContract\bin\Debug\Tavisca.EmployeeManagement.ServiceContract.pdb
+D:\Wcf\Tavisca-Training-WCF-EMS\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ServiceContract\bin\Debug\Tavisca.EmployeeManagement.DataContract.dll
+D:\Wcf\Tavisca-Training-WCF-EMS\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ServiceContract\bin\Debug\Tavisca.EmployeeManagement.DataContract.pdb
+D:\Wcf\Tavisca-Training-WCF-EMS\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ServiceContract\obj\Debug\Tavisca.EmployeeManagement.ServiceContract.csprojResolveAssemblyReference.cache
+D:\Wcf\Tavisca-Training-WCF-EMS\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ServiceContract\obj\Debug\Tavisca.EmployeeManagement.ServiceContract.dll
+D:\Wcf\Tavisca-Training-WCF-EMS\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ServiceContract\obj\Debug\Tavisca.EmployeeManagement.ServiceContract.pdb
