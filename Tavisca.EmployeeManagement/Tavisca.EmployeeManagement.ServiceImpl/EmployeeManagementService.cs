@@ -19,37 +19,95 @@ namespace Tavisca.EmployeeManagement.ServiceImpl
 
         IEmployeeManagementManager _manager;
 
-        public DataContract.Employee Create(DataContract.Employee employee)
+        public DataContract.CreateEmployeeResponse Create(DataContract.Employee employee)
         {
+            DataContract.CreateEmployeeResponse response = new DataContract.CreateEmployeeResponse();
             try
             {
-                employee.JoiningDate = DateTime.UtcNow;
                 var result = _manager.Create(employee.ToDomainModel());
-                if (result == null) return null;
-                return result.ToDataContract();
+                if (result == null) return response;
+                response.CreatedEmployee = result.ToDataContract();
+                return response;
             }
             catch (Exception ex)
             {
                 Exception newEx;
                 var rethrow = ExceptionPolicy.HandleException("service.policy", ex, out newEx);
-                throw newEx;
+                response.ResponseStatus.Code = "500";
+                response.ResponseStatus.Message = ex.Message;
+                return response;
             }
         }
 
-        public DataContract.Remark AddRemark(string employeeId, DataContract.Remark remark)
+        public DataContract.CreatedRemarkResponse AddRemark(string employeeId, DataContract.Remark remark)
         {
+            DataContract.CreatedRemarkResponse response = new DataContract.CreatedRemarkResponse();
             try
             {
                 var result = _manager.AddRemark(employeeId, remark.ToDomainModel());
-                if (result == null) return null;
-                return result.ToDataContract();
+                if (result == null) return response;
+                response.Remark = result.ToDataContract();
+                return response;
             }
             catch (Exception ex)
             {
                 Exception newEx;
                 var rethrow = ExceptionPolicy.HandleException("service.policy", ex, out newEx);
-                throw newEx;
+                response.ResponseStatus.Code = "500";
+                response.ResponseStatus.Message = ex.Message;
+                return response;
             }
         }
+
+        public DataContract.AuthenticateEmployeeResponse Authenticate(DataContract.Credentials creds)
+        {
+            DataContract.AuthenticateEmployeeResponse response = new DataContract.AuthenticateEmployeeResponse();
+            try
+            {
+                var result = _manager.Authenticate(creds.UserName, creds.Password);
+                if (result == null) return response;
+                response.AuthenticatedEmployee= result.ToDataContract();
+                return response;
+            }
+            catch (Exception ex)
+            {
+                Exception newEx;
+                var rethrow = ExceptionPolicy.HandleException("service.policy", ex, out newEx);
+                response.ResponseStatus.Code = "500";
+                response.ResponseStatus.Message = ex.Message;
+                return response;
+            }
+
+        }
+        public DataContract.ChangePasswordResponse ChangePassword(DataContract.PasswordChange pass)
+        {
+            DataContract.ChangePasswordResponse response = new DataContract.ChangePasswordResponse();
+            try
+            {
+                var result = _manager.ChangePassword(pass.EmployeeId, pass.OldPassword, pass.NewPassword);
+                DataContract.Employee emp = new DataContract.Employee();
+
+                if (result)
+                {
+                    return response;
+                }
+                response.ResponseStatus.Code = "500";
+                response.ResponseStatus.Message ="Failed";
+                return response;
+
+            }
+            catch (Exception ex)
+            {
+                Exception newEx;
+                var rethrow = ExceptionPolicy.HandleException("service.policy", ex, out newEx);
+                response.ResponseStatus.Code = "500";
+                response.ResponseStatus.Message = ex.Message;
+                return response;
+            }
+
+
+
+        }
+
     }
 }

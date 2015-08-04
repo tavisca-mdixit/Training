@@ -16,137 +16,233 @@ namespace Tavisca.EmployeeManagement.FileStorage
 {
     public class EmployeeStorage : IEmployeeStorage
     {
-
         public Model.Employee Save(Model.Employee employee)
         {
-            try
+
+            using (var con = new SqlConnection("Data Source=TAVWITPD041;Initial Catalog=Employee;User ID=sa;Password=test123!@#"))
             {
-                SqlConnection con = new SqlConnection("Data Source=TRAINING12;Initial Catalog=Employee;User ID=sa;Password=test123!@#");
                 con.Open();
-                SqlCommand cmd = new SqlCommand("Insert into EmployeeDetails values(@EmpId,@FirstName,@LastName,@title,@Email,@phno,@Doj)", con);
-                SqlParameter p1 = new SqlParameter("EmpId", employee.Id);
+                SqlCommand cmd = new SqlCommand("SaveEmployee", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter p1 = new SqlParameter("Title", employee.Title);
                 SqlParameter p2 = new SqlParameter("FirstName", employee.FirstName);
                 SqlParameter p3 = new SqlParameter("LastName", employee.LastName);
-                SqlParameter p4 = new SqlParameter("title", employee.Title);
-                SqlParameter p5 = new SqlParameter("Email", employee.Email);
-                SqlParameter p6 = new SqlParameter("phno", employee.Phone);
-                SqlParameter p7 = new SqlParameter("Doj", employee.JoiningDate.ToString());
-                SqlCommand cmdRemark = new SqlCommand("Insert into EmployeeRemarks values(@EmpId,@Remark,@RemarkTime)", con);
-                if (employee.Remarks != null)
-                {
-                    foreach (var empRemark in employee.Remarks)
-                    {
-                        SqlParameter p8 = new SqlParameter("EmpId", employee.Id);
-                        SqlParameter p9 = new SqlParameter("Remark", empRemark.Text);
-                        SqlParameter p10 = new SqlParameter("RemarkTime", empRemark.CreateTimeStamp.ToString());
-                        cmdRemark.Parameters.Add(p8);
-                        cmdRemark.Parameters.Add(p9);
-                        cmdRemark.Parameters.Add(p10);
-                        cmdRemark.ExecuteNonQuery();
-                        return employee;
-                    }
-                }
+                SqlParameter p4 = new SqlParameter("Email", employee.Email);
+                SqlParameter p5 = new SqlParameter("Phone", employee.Phone);
+                SqlParameter p6 = new SqlParameter("Doj", employee.JoiningDate);
+
                 cmd.Parameters.Add(p1);
                 cmd.Parameters.Add(p2);
                 cmd.Parameters.Add(p3);
                 cmd.Parameters.Add(p4);
                 cmd.Parameters.Add(p5);
                 cmd.Parameters.Add(p6);
-                cmd.Parameters.Add(p7);
 
                 cmd.ExecuteNonQuery();
-                con.Close();
                 return employee;
 
-
             }
-            catch (Exception ex)
+        }
+
+        public Model.Employee SaveRemark(Model.Employee employee)
+        {
+
+            using (var con = new SqlConnection("Data Source=TAVWITPD041;Initial Catalog=Employee;User ID=sa;Password=test123!@#"))
             {
-                var rethrow = ExceptionPolicy.HandleException("data.policy", ex);
-                if (rethrow) throw;
-                return null;
+                con.Open();
+                SqlCommand cmdRemark = new SqlCommand("AddRemark", con);
+                cmdRemark.CommandType = CommandType.StoredProcedure;
+
+                foreach (var empRemark in employee.Remarks)
+                {
+                    SqlParameter p6 = new SqlParameter("EmpId", employee.Id);
+                    SqlParameter p7 = new SqlParameter("Text", empRemark.Text);
+                    SqlParameter p8 = new SqlParameter("CreateTimeStamp", empRemark.CreateTimeStamp);
+                    cmdRemark.Parameters.Add(p6);
+                    cmdRemark.Parameters.Add(p7);
+                    cmdRemark.Parameters.Add(p8);
+                    cmdRemark.ExecuteNonQuery();
+
+                }
+                return employee;
+            }
+
+        }
+
+        public List<Model.Remark> GetRemark(int employeeId)
+        {
+            using (var con = new SqlConnection("Data Source=TAVWITPD041;Initial Catalog=Employee;User ID=sa;Password=test123!@#"))
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand("GetRemark", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                cmd.Parameters.Add(new SqlParameter("@Id", employeeId));
+                SqlDataReader remarkReader = cmd.ExecuteReader();
+                List<Model.Remark> tempRemark = new List<Model.Remark>();
+                while (remarkReader.Read())
+                {
+
+                    Model.Remark remark = new Model.Remark();
+                    remark.Text = remarkReader[2].ToString();
+                    remark.CreateTimeStamp = DateTime.Parse(remarkReader[3].ToString());
+                    tempRemark.Add(remark);
+
+                }
+
+                return tempRemark;
             }
         }
 
         public Model.Employee Get(string employeeId)
         {
-            try
+
+            using (var con = new SqlConnection("Data Source=TAVWITPD041;Initial Catalog=Employee;User ID=sa;Password=test123!@#"))
             {
+                con.Open();
+                SqlCommand cmd = new SqlCommand("GetEmployee", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                cmd.Parameters.Add(new SqlParameter("@Id", employeeId));
                 Model.Employee emp = new Model.Employee();
                 List<Model.Remark> tempRemark = new List<Model.Remark>();
-                SqlConnection conEmp = new SqlConnection("Data Source=TRAINING12;Initial Catalog=Employee;User ID=sa;Password=test123!@#");
-                conEmp.Open();
-                SqlCommand cmd = new SqlCommand("select * from EmployeeDetails where EmpId='" + employeeId + "'", conEmp);
-                SqlDataReader empployeeReader = cmd.ExecuteReader();
-                while (empployeeReader.Read())
-                {
-                    emp.Id = empployeeReader[0].ToString();
-                    emp.FirstName = empployeeReader[1].ToString();
-                    emp.LastName = empployeeReader[2].ToString();
-                    emp.Title = empployeeReader[3].ToString();
-                    emp.Email = empployeeReader[4].ToString();
-                    emp.Phone = empployeeReader[5].ToString();
-                    emp.JoiningDate = DateTime.Parse(empployeeReader[6].ToString());
-                }
-                conEmp.Close();
-                SqlConnection conRemark = new SqlConnection("Data Source=TRAINING12;Initial Catalog=Employee;User ID=sa;Password=test123!@#");
-                conRemark.Open();
-                SqlCommand cmdRemarks = new SqlCommand("select * from EmployeeRemarks where EmpId='" + employeeId + "'", conRemark);
-                SqlDataReader remarkReader = cmdRemarks.ExecuteReader();
-             
-                while (remarkReader.Read())
-                {
-                    Model.Remark remark = new Model.Remark();
-                    remark.Text = remarkReader[2].ToString();
-                    remark.CreateTimeStamp = Convert.ToDateTime(remarkReader[3]);
-                    tempRemark.Add(remark);
 
+                SqlDataReader empReader = cmd.ExecuteReader();
+                while (empReader.Read())
+                {
+                    emp.Id = empReader[0].ToString();
+                    emp.Title = empReader[1].ToString();
+                    emp.FirstName = empReader[2].ToString();
+                    emp.LastName = empReader[3].ToString();
+                    emp.Email = empReader[4].ToString();
+                    emp.Phone = empReader[5].ToString();
+                    emp.JoiningDate = DateTime.Parse(empReader[6].ToString());
                 }
-                emp.Remarks = tempRemark;
-
-                conRemark.Close();
+                emp.Remarks = GetRemark(Convert.ToInt32(emp.Id));
                 return emp;
             }
 
-
-            catch (Exception ex)
-            {
-                var rethrow = ExceptionPolicy.HandleException("data.policy", ex);
-                if (rethrow) throw;
-                return null;
-            }
         }
 
         public List<Model.Employee> GetAll()
         {
-            List<Model.Employee> employeeList = new List<Model.Employee>();
-            Model.Employee employee = new Model.Employee();
 
-
-            SqlConnection con = new SqlConnection("Data Source=TRAINING12;Initial Catalog=Employee;User ID=sa;Password=test123!@#");
-            con.Open();
-            SqlCommand cmd = new SqlCommand("select * from EmployeeDetails ", con);
-            SqlDataReader empReader = cmd.ExecuteReader();
-
-            while (empReader.Read())
+            using (var con = new SqlConnection("Data Source=TAVWITPD041;Initial Catalog=Employee;User ID=sa;Password=test123!@#"))
             {
-                employee.Id = empReader[0].ToString();
-                employee.FirstName = empReader[1].ToString();
-                employee.LastName = empReader[2].ToString();
-                employee.Title = empReader[3].ToString();
-                employee.Email = empReader[4].ToString();
-                employee.Phone = empReader[5].ToString();
-                employee.JoiningDate = DateTime.Parse(empReader[6].ToString());
-                employeeList.Add(employee);
+                con.Open();
+                SqlCommand cmd = new SqlCommand("GetAllEmp", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                List<Model.Employee> empList = new List<Model.Employee>();
+
+                SqlDataReader empReader = cmd.ExecuteReader();
+
+                while (empReader.Read())
+                {
+                    Model.Employee emp = new Model.Employee();
+                    emp.Id = empReader[0].ToString();
+                    emp.Title = empReader[1].ToString();
+                    emp.FirstName = empReader[2].ToString();
+                    emp.LastName = empReader[3].ToString();
+                    emp.Email = empReader[4].ToString();
+                    emp.Phone = empReader[5].ToString();
+                    emp.JoiningDate = DateTime.Parse(empReader[6].ToString());
+                    empList.Add(emp);
+                }
+                return empList;
             }
-            con.Close();
-            return employeeList;
 
         }
 
-        private string GetFileName(string employeeId)
+        public Model.Employee Authenticate(string userName, string password)
         {
-            return string.Format(@"{0}\{1}.emp", Configurations.StoragePath, employeeId);
+
+            using (var conEmp = new SqlConnection("Data Source=TAVWITPD041;Initial Catalog=Employee;User ID=sa;Password=test123!@#"))
+            {
+                conEmp.Open();
+                SqlCommand cmd = new SqlCommand("AuthenticateEmp", conEmp);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add(new SqlParameter("@Email", userName));
+                cmd.Parameters.Add(new SqlParameter("@Password", password));
+                SqlDataReader empReader = cmd.ExecuteReader();
+                Model.Employee emp = new Model.Employee();
+
+                if (empReader.HasRows)
+                {
+                    while (empReader.Read())
+                    {
+
+                        emp.Id = empReader[0].ToString().Trim();
+                        emp.Title = empReader[1].ToString().Trim();
+                        emp.FirstName = empReader[2].ToString().Trim();
+                        emp.LastName = empReader[3].ToString().Trim();
+                        emp.Email = empReader[4].ToString().Trim();
+                        emp.Phone = empReader[5].ToString().Trim();
+                        emp.JoiningDate = DateTime.Parse(empReader[6].ToString().Trim());
+
+                    }
+                    return emp;
+                }
+                emp = null;
+                return emp;
+            }
+        }
+
+        public bool ChangePassword(string employeeId, string oldPass, string newPass)
+        {
+            using (var con = new SqlConnection("Data Source=TAVWITPD041;Initial Catalog=Employee;User ID=sa;Password=test123!@#"))
+            {
+
+                con.Open();
+                SqlCommand cmd = new SqlCommand("UpdatePassword", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add(new SqlParameter("@Id", employeeId));
+                cmd.Parameters.Add(new SqlParameter("@Password", oldPass));
+                cmd.Parameters.Add(new SqlParameter("@NewPassword", newPass));
+                int queryExecuted = cmd.ExecuteNonQuery();
+                if (queryExecuted > 0)
+                {
+                    con.Close();
+                    return true;
+                }
+                return false;
+            }
+
+        }
+
+        public List<Model.Remark> PaginateRemarks(string employeeId, string pageNumber)
+        {
+            using (var con = new SqlConnection("Data Source=TAVWITPD041;Initial Catalog=Employee;User ID=sa;Password=test123!@#"))
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand("PaginateRemark", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add(new SqlParameter("@Id", employeeId));
+                cmd.Parameters.Add(new SqlParameter("@page", pageNumber));
+                SqlDataReader remarkReader = cmd.ExecuteReader();
+                List<Model.Remark> tempRemarkList = new List<Model.Remark>();
+                while (remarkReader.Read())
+                {
+                    Model.Remark tempRemarkObj = new Model.Remark();
+                    tempRemarkObj.Text = remarkReader[0].ToString();
+                    tempRemarkObj.CreateTimeStamp = DateTime.Parse(remarkReader[1].ToString());
+                    tempRemarkList.Add(tempRemarkObj);
+                }
+                return tempRemarkList;
+            }
+
+        }
+
+        public string GetRemarkCount(string employeeId)
+        {
+            using (var con = new SqlConnection("Data Source=TAVWITPD041;Initial Catalog=Employee;User ID=sa;Password=test123!@#"))
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand("RemarkCount", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add(new SqlParameter("@Id", employeeId));
+                return cmd.ExecuteScalar().ToString();
+            }
         }
     }
 }

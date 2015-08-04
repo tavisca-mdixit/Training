@@ -1,0 +1,9 @@
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.BusinessLogic\bin\Release\Tavisca.EmployeeManagement.BusinessLogic.dll
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.BusinessLogic\bin\Release\Tavisca.EmployeeManagement.BusinessLogic.pdb
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.BusinessLogic\bin\Release\Tavisca.EmployeeManagement.Interface.dll
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.BusinessLogic\bin\Release\Tavisca.EmployeeManagement.Model.dll
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.BusinessLogic\bin\Release\Tavisca.EmployeeManagement.Interface.pdb
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.BusinessLogic\bin\Release\Tavisca.EmployeeManagement.Model.pdb
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.BusinessLogic\obj\Release\Tavisca.EmployeeManagement.BusinessLogic.csprojResolveAssemblyReference.cache
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.BusinessLogic\obj\Release\Tavisca.EmployeeManagement.BusinessLogic.dll
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.BusinessLogic\obj\Release\Tavisca.EmployeeManagement.BusinessLogic.pdb

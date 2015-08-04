@@ -20,7 +20,7 @@ namespace Tavisca.EmployeeManagement.BusinessLogic
         public Employee Create(Employee employee)
         {
             employee.Validate();
-            employee.Id = Guid.NewGuid().ToString();
+           
             return _storage.Save(employee);
         }
 
@@ -28,11 +28,24 @@ namespace Tavisca.EmployeeManagement.BusinessLogic
         {
             remark.Validate();
             var employee = _storage.Get(employeeId);
-            if(employee.Remarks == null) employee.Remarks = new List<Remark>();
+            if (employee.Remarks == null) employee.Remarks = new List<Remark>();
+            else employee.Remarks.Clear();
             remark.CreateTimeStamp = DateTime.UtcNow;
             employee.Remarks.Add(remark);
-            _storage.Save(employee);
+            _storage.SaveRemark(employee);
             return remark;
         }
+        public Employee Authenticate(string userName,string password)
+        {
+            
+            return _storage.Authenticate(userName,password);
+        }
+
+        public bool ChangePassword(string employeeId,string oldPass, string newPass)
+        {
+            return _storage.ChangePassword(employeeId,oldPass,newPass);        
+        
+        }
+       
     }
 }

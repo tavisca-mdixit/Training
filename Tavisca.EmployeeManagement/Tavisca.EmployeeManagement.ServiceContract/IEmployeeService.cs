@@ -13,9 +13,15 @@ namespace Tavisca.EmployeeManagement.ServiceContract
     public interface IEmployeeService
     {
         [WebGet(UriTemplate = "employee/{employeeId}", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
-        Employee Get(string employeeId);
+        DataContract.GetEmployeeResponse Get(string employeeId);
 
         [WebGet(UriTemplate = "employee", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
-        List<Employee> GetAll();
+        DataContract.GetAllEmployeeResponse GetAll();
+
+        [WebGet(UriTemplate = "employee/remarks/{employeeId}/{pageNumber}", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
+        DataContract.GetRemarkResponse  GetRemarks(string employeeId,string pageNumber);
+
+        [WebGet(UriTemplate = "employee/remarks/count/{employeeId}", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
+        DataContract.GetRemarkCountResponse GetRemarkCount(string employeeId);
     }
 }

@@ -24,6 +24,8 @@ namespace Tavisca.EmployeeManagement.Model
 
         public List<Remark> Remarks { get; set; }
 
+        public Status Status { get; set; }
+
         public void Validate()
         {
             if (string.IsNullOrWhiteSpace(this.FirstName))

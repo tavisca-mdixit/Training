@@ -12,5 +12,9 @@ namespace Tavisca.EmployeeManagement.Interface
         Employee Create(Employee employee);
 
         Remark AddRemark(string employeeId, Remark remark);
+
+        Employee Authenticate(string userName, string password);
+
+        bool ChangePassword(string emplpoyeeId,string oldPass, string newPass);
     }
 }

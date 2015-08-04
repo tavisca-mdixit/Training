@@ -1,0 +1,5 @@
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ErrorSpace\bin\Release\Tavisca.EmployeeManagement.ErrorSpace.dll
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ErrorSpace\bin\Release\Tavisca.EmployeeManagement.ErrorSpace.pdb
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ErrorSpace\obj\Release\Tavisca.EmployeeManagement.ErrorSpace.csprojResolveAssemblyReference.cache
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ErrorSpace\obj\Release\Tavisca.EmployeeManagement.ErrorSpace.dll
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ErrorSpace\obj\Release\Tavisca.EmployeeManagement.ErrorSpace.pdb

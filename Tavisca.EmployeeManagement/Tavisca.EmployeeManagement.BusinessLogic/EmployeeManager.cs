@@ -26,5 +26,13 @@ namespace Tavisca.EmployeeManagement.BusinessLogic
         {
             return _storage.GetAll();
         }
+        public List<Remark> PaginateRemarks(string employeeId,string pageNumber)
+        {
+            return _storage.PaginateRemarks(employeeId,pageNumber);
+        }
+        public string GetRemarkCount(string employeeId)
+        {
+            return _storage.GetRemarkCount(employeeId);
+        }
     }
 }

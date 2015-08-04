@@ -40,9 +40,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AuthenticateEmployeeResponse.cs" />
+    <Compile Include="ChangePasswordResponse.cs" />
+    <Compile Include="CreatedRemarkResponse.cs" />
+    <Compile Include="CreateEmployeeResponse.cs" />
+    <Compile Include="Credentials.cs" />
     <Compile Include="Employee.cs" />
+    <Compile Include="GetAllEmployeeResponse.cs" />
+    <Compile Include="GetEmployeeResponse.cs" />
+    <Compile Include="GetRemarkCountResponse.cs" />
+    <Compile Include="GetRemarkResponse.cs" />
+    <Compile Include="PasswordChange.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Remark.cs" />
+    <Compile Include="Result.cs" />
+    <Compile Include="Status.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

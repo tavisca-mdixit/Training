@@ -13,9 +13,24 @@ namespace Tavisca.EmployeeManagement.ServiceContract
     public interface IEmployeeManagementService
     {
         [WebInvoke(Method="POST", UriTemplate="/employee", RequestFormat= WebMessageFormat.Json, ResponseFormat= WebMessageFormat.Json)]
-        Employee Create(Employee employee);
+        DataContract.CreateEmployeeResponse Create(Employee employee);
 
         [WebInvoke(Method = "POST", UriTemplate = "/employee/{employeeId}/remark", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
-        Remark AddRemark(string employeeId, Remark remark);
+        DataContract.CreatedRemarkResponse AddRemark(string employeeId, Remark remark);
+
+        [WebInvoke(Method = "POST", UriTemplate = "/employee/credentials", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
+        DataContract.AuthenticateEmployeeResponse Authenticate(Credentials creds);
+      
+        [WebInvoke(Method = "POST", UriTemplate = "/employee/changepassword", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
+        DataContract.ChangePasswordResponse ChangePassword(PasswordChange pass);
+        
+
+       
     }
 }
+
+            //var client = new WebClient();
+            //client.Headers.Add("Content-Type", contentType);
+            //var dataToBeUploaded = Serializer.Serialize<T1>(data);
+            //var response = client.UploadString(url, method, dataToBeUploaded);
+            //return Serializer.Deserialize<T2>(response);

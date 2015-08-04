@@ -20,7 +20,8 @@ namespace Tavisca.EmployeeManagement.Translator
                 Email = employee.Email,
                 JoiningDate = employee.JoiningDate,
                 Phone = employee.Phone,
-                Remarks = employee.Remarks == null ? null : employee.Remarks.Select(remark => remark.ToDomainModel()).ToList()
+                Remarks = employee.Remarks == null ? null : employee.Remarks.Select(remark => remark.ToDomainModel()).ToList(),
+            
             };
         }
 
@@ -36,8 +37,11 @@ namespace Tavisca.EmployeeManagement.Translator
                 Email = employee.Email,
                 JoiningDate = employee.JoiningDate,
                 Phone = employee.Phone,
-                Remarks = employee.Remarks == null ? null : employee.Remarks.Select(remark => remark.ToDataContract()).ToList()
+                Remarks = employee.Remarks == null ? null : employee.Remarks.Select(remark => remark.ToDataContract()).ToList(),
+      
+                
             };
         }
+       
     }
 }

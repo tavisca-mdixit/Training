@@ -33,5 +33,6 @@ namespace Tavisca.EmployeeManagement.DataContract
 
         [DataMember]
         public List<Remark> Remarks { get; set; }
+
     }
 }

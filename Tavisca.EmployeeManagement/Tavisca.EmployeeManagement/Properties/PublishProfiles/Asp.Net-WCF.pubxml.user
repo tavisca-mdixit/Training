@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\Publish-WCF</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Caching.dll">
+      <publishTime>04/16/2010 14:16:58</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Common.dll">
+      <publishTime>07/29/2015 13:36:53</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll">
+      <publishTime>04/16/2010 14:16:58</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll">
+      <publishTime>04/16/2010 14:16:58</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Logging.dll">
+      <publishTime>07/29/2015 13:36:54</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.ServiceLocation.dll">
+      <publishTime>07/29/2015 13:36:53</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.Unity.Configuration.dll">
+      <publishTime>04/16/2010 13:42:32</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.Unity.dll">
+      <publishTime>04/16/2010 13:42:32</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.Unity.Interception.Configuration.dll">
+      <publishTime>07/29/2015 13:36:54</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.Unity.Interception.dll">
+      <publishTime>07/29/2015 13:36:54</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>07/28/2015 17:18:21</publishTime>
+    </File>
+    <File Include="bin/Tavisca.EmployeeManagement.BusinessLogic.dll">
+      <publishTime>07/29/2015 13:36:54</publishTime>
+    </File>
+    <File Include="bin/Tavisca.EmployeeManagement.DataContract.dll">
+      <publishTime>07/29/2015 13:36:54</publishTime>
+    </File>
+    <File Include="bin/Tavisca.EmployeeManagement.dll">
+      <publishTime>07/29/2015 13:43:38</publishTime>
+    </File>
+    <File Include="bin/Tavisca.EmployeeManagement.EnterpriseLibrary.dll">
+      <publishTime>07/29/2015 13:36:55</publishTime>
+    </File>
+    <File Include="bin/Tavisca.EmployeeManagement.ErrorSpace.dll">
+      <publishTime>07/29/2015 13:36:54</publishTime>
+    </File>
+    <File Include="bin/Tavisca.EmployeeManagement.FileStorage.dll">
+      <publishTime>07/29/2015 13:36:55</publishTime>
+    </File>
+    <File Include="bin/Tavisca.EmployeeManagement.Interface.dll">
+      <publishTime>07/29/2015 13:36:54</publishTime>
+    </File>
+    <File Include="bin/Tavisca.EmployeeManagement.Model.dll">
+      <publishTime>07/29/2015 13:36:54</publishTime>
+    </File>
+    <File Include="bin/Tavisca.EmployeeManagement.ServiceContract.dll">
+      <publishTime>07/29/2015 13:36:54</publishTime>
+    </File>
+    <File Include="bin/Tavisca.EmployeeManagement.ServiceImpl.dll">
+      <publishTime>07/29/2015 13:36:55</publishTime>
+    </File>
+    <File Include="bin/Tavisca.EmployeeManagement.Translator.dll">
+      <publishTime>07/29/2015 13:36:54</publishTime>
+    </File>
+    <File Include="EmployeeManagementService.svc">
+      <publishTime>07/28/2015 17:13:52</publishTime>
+    </File>
+    <File Include="EmployeeService.svc">
+      <publishTime>07/28/2015 17:13:52</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>07/28/2015 17:18:22</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>07/29/2015 13:36:56</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

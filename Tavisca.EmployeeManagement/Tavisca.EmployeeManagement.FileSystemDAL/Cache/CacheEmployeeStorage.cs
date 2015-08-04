@@ -25,28 +25,54 @@ namespace Tavisca.EmployeeManagement.FileStorage
         readonly string KEYFORMAT = "emp.{0}";
         readonly string CACHEMANAGER = "employee";
 
+        public Model.Employee SaveRemark(Model.Employee employee)
+        {
+            var result = _innerStorage.SaveRemark(employee);
+
+            return result;
+        }
         public Model.Employee Save(Model.Employee employee)
         {
             var result = _innerStorage.Save(employee);
-            _cacheManager.Add(string.Format(KEYFORMAT, result.Id), result, CACHEMANAGER);
+
             return result;
         }
 
         public Model.Employee Get(string employeeId)
         {
-            Model.Employee result;
-            result = _cacheManager.Get(string.Format(KEYFORMAT, employeeId), CACHEMANAGER) as Model.Employee;
-            if (result == null)
-            {
-                result = _innerStorage.Get(employeeId);
-                _cacheManager.Add(string.Format(KEYFORMAT, employeeId), result, CACHEMANAGER);
-            }
+            Model.Employee result = null;
+
+            result = _innerStorage.Get(employeeId);
+
+
             return result;
         }
 
         public List<Model.Employee> GetAll()
         {
             return _innerStorage.GetAll();
+        }
+
+        public Model.Employee Authenticate(string userName, string password)
+        {
+            var result = _innerStorage.Authenticate(userName, password);
+
+            return result;
+        }
+
+        public bool ChangePassword(string employeeId, string oldPass, string newPass)
+        {
+            var result = _innerStorage.ChangePassword(employeeId, oldPass, newPass);
+
+            return result;
+        }
+        public List<Model.Remark> PaginateRemarks(string employeeId, string pageNumber)
+        {
+            return _innerStorage.PaginateRemarks(employeeId, pageNumber);
+        }
+        public string GetRemarkCount(string employeeId)
+        {
+            return _innerStorage.GetRemarkCount(employeeId);
         }
     }
 }

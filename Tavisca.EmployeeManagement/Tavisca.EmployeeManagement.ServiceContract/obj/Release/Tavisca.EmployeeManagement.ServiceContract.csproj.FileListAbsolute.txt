@@ -1,0 +1,7 @@
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ServiceContract\bin\Release\Tavisca.EmployeeManagement.ServiceContract.dll
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ServiceContract\bin\Release\Tavisca.EmployeeManagement.ServiceContract.pdb
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ServiceContract\bin\Release\Tavisca.EmployeeManagement.DataContract.dll
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ServiceContract\bin\Release\Tavisca.EmployeeManagement.DataContract.pdb
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ServiceContract\obj\Release\Tavisca.EmployeeManagement.ServiceContract.csprojResolveAssemblyReference.cache
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ServiceContract\obj\Release\Tavisca.EmployeeManagement.ServiceContract.dll
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ServiceContract\obj\Release\Tavisca.EmployeeManagement.ServiceContract.pdb

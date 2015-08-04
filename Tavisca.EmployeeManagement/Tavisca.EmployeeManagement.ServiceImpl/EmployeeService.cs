@@ -19,36 +19,86 @@ namespace Tavisca.EmployeeManagement.ServiceImpl
 
         IEmployeeManager _manager;
 
-        public DataContract.Employee Get(string employeeId)
+        public DataContract.GetEmployeeResponse Get(string employeeId)
         {
+            DataContract.GetEmployeeResponse response = new DataContract.GetEmployeeResponse();
             try
             {
                 var result = _manager.Get(employeeId);
-                if (result == null) return null;
-                return result.ToDataContract();
+                if (result == null) return response;
+                response.RequestedEmployee = result.ToDataContract();
+                return response;
             }
             catch (Exception ex)
             {
                 var rethrow = ExceptionPolicy.HandleException("service.policy", ex);
                 if (rethrow) throw;
-                return null;
+                response.ResponseStatus.Code = "500";
+                response.ResponseStatus.Message = "Unable to fetch  request employee";
+                return response;
             }
         }
 
-        public List<DataContract.Employee> GetAll()
+        public DataContract.GetAllEmployeeResponse GetAll()
         {
+            DataContract.GetAllEmployeeResponse response = new DataContract.GetAllEmployeeResponse();
             try
             {
                 var result = _manager.GetAll();
-                if (result == null) return null;
-                return result.Select(employee => employee.ToDataContract()).ToList();
+                if (result == null) return response;
+                 response.EmpList = result.Select(employee => employee.ToDataContract()).ToList();                
+                 return response;
+             
             }
             catch (Exception ex)
             {
                 var rethrow = ExceptionPolicy.HandleException("service.policy", ex);
                 if (rethrow) throw;
-                return null;
+                response.ResponseStatus.Code = "500";
+                response.ResponseStatus.Message = "Unable to fetch list of employees";
+                return response;
             }
+
+        }
+        public DataContract.GetRemarkResponse   GetRemarks(string employeeId,string pageNumber)
+        {
+            DataContract.GetRemarkResponse response = new DataContract.GetRemarkResponse();
+            try
+            {            
+                var result = _manager.PaginateRemarks(employeeId,pageNumber);
+                if (result == null) return response; 
+                response.RequestedRemark=result.Select(remark=>remark.ToDataContract()).ToList();
+                return response;
+            }
+            catch (Exception ex)
+            {
+                var rethrow = ExceptionPolicy.HandleException("service.policy", ex);
+                if (rethrow) throw;
+                response.ResponseStatus.Code = "500";
+                response.ResponseStatus.Message = "Unable to fetch employee response";
+                return response;
+            }        
+        
+        }
+        public DataContract.GetRemarkCountResponse GetRemarkCount(string employeeId)
+        {
+            DataContract.GetRemarkCountResponse response = new DataContract.GetRemarkCountResponse();
+            try
+            {
+                var result = _manager.GetRemarkCount(employeeId);
+                if (result == null) return response;
+                response.Count = result;
+                return response;
+
+            }
+            catch (Exception ex)
+            {
+                var rethrow = ExceptionPolicy.HandleException("service.policy", ex);
+                if (rethrow) throw;
+                response.ResponseStatus.Code = "500";
+                response.ResponseStatus.Message = "Unable to fetch Remark Count";
+                return response;
+            }        
 
         }
     }

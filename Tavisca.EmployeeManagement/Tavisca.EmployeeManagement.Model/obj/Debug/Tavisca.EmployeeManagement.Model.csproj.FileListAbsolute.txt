@@ -1,5 +1,9 @@
-D:\Wcf\Tavisca-Training-WCF-EMS\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.Model\bin\Debug\Tavisca.EmployeeManagement.Model.dll
-D:\Wcf\Tavisca-Training-WCF-EMS\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.Model\bin\Debug\Tavisca.EmployeeManagement.Model.pdb
-D:\Wcf\Tavisca-Training-WCF-EMS\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.Model\obj\Debug\Tavisca.EmployeeManagement.Model.csprojResolveAssemblyReference.cache
-D:\Wcf\Tavisca-Training-WCF-EMS\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.Model\obj\Debug\Tavisca.EmployeeManagement.Model.dll
-D:\Wcf\Tavisca-Training-WCF-EMS\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.Model\obj\Debug\Tavisca.EmployeeManagement.Model.pdb
+D:\Training\Training\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.Model\bin\Debug\Tavisca.EmployeeManagement.Model.dll
+D:\Training\Training\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.Model\bin\Debug\Tavisca.EmployeeManagement.Model.pdb
+D:\Training\Training\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.Model\obj\Debug\Tavisca.EmployeeManagement.Model.csprojResolveAssemblyReference.cache
+D:\Training\Training\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.Model\obj\Debug\Tavisca.EmployeeManagement.Model.dll
+D:\Training\Training\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.Model\obj\Debug\Tavisca.EmployeeManagement.Model.pdb
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.Model\bin\Debug\Tavisca.EmployeeManagement.Model.dll
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.Model\bin\Debug\Tavisca.EmployeeManagement.Model.pdb
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.Model\obj\Debug\Tavisca.EmployeeManagement.Model.dll
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.Model\obj\Debug\Tavisca.EmployeeManagement.Model.pdb
