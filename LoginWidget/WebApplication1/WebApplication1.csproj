@@ -133,7 +133,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
-    <Content Include="Account\Login.aspx" />
+    <Content Include="Login.aspx" />
     <Content Include="Account\OpenAuthProviders.ascx" />
     <Content Include="Account\Register.aspx" />
     <Content Include="Account\RegisterExternalLogin.aspx" />
@@ -217,15 +217,16 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="packages.config" />
-    <Content Include="Views\HrPage.aspx" />
-    <Content Include="Views\EmployeePage.aspx" />
+    <Content Include="HrPage.aspx" />
+    <Content Include="EmployeePage.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Views\EmployeePasswordChnage.aspx" />
+    <Content Include="EmployeePasswordChange.aspx" />
+    <Content Include="Logout.aspx" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -280,11 +281,11 @@
     <Compile Include="About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Account\Login.aspx.cs">
+    <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Account\Login.aspx.designer.cs">
+    <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Account\OpenAuthProviders.ascx.cs">
@@ -358,18 +359,18 @@
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
-    <Compile Include="Views\HrPage.aspx.cs">
+    <Compile Include="HrPage.aspx.cs">
       <DependentUpon>HrPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Views\HrPage.aspx.designer.cs">
+    <Compile Include="HrPage.aspx.designer.cs">
       <DependentUpon>HrPage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Views\EmployeePage.aspx.cs">
+    <Compile Include="EmployeePage.aspx.cs">
       <DependentUpon>EmployeePage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Views\EmployeePage.aspx.designer.cs">
+    <Compile Include="EmployeePage.aspx.designer.cs">
       <DependentUpon>EmployeePage.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserControl\LoginUserControl.ascx.cs">
@@ -379,12 +380,19 @@
     <Compile Include="UserControl\LoginUserControl.ascx.designer.cs">
       <DependentUpon>LoginUserControl.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Views\EmployeePasswordChnage.aspx.cs">
-      <DependentUpon>EmployeePasswordChnage.aspx</DependentUpon>
+    <Compile Include="EmployeePasswordChange.aspx.cs">
+      <DependentUpon>EmployeePasswordChange.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Views\EmployeePasswordChnage.aspx.designer.cs">
-      <DependentUpon>EmployeePasswordChnage.aspx</DependentUpon>
+    <Compile Include="EmployeePasswordChange.aspx.designer.cs">
+      <DependentUpon>EmployeePasswordChange.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

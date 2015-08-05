@@ -16,8 +16,10 @@ namespace WebApplication1
 {
     public partial class WebUserControl1 : System.Web.UI.UserControl
     {
-        private string _employeeServiceUrl = ConfigurationManager.AppSettings["employeeserviceurl"];
         private string _employeeManagementServiceUrl = ConfigurationManager.AppSettings["employeemanagementserviceurl"];
+        private string _success = ConfigurationManager.AppSettings["Success"];
+         private string _employeePage = ConfigurationManager.AppSettings["EmployeePage"];
+         private string _hrPage = ConfigurationManager.AppSettings["HrPage"];
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -34,9 +36,9 @@ namespace WebApplication1
             credentials.Password = TextBox2.Text;
             HttpClient client = new HttpClient();
             var response = client.UploadData<Credentials, AuthenticatedEmployeeResponse>(_employeeManagementServiceUrl + "employee/credentials", credentials);
-            if (response.AuthenticatedEmployee ==null || response.ResponseStatus.Code != "200")
+            if ( response.ResponseStatus.Code != _success)
             {
-                Message.Text = response.ResponseStatus.Message;
+                Message.Text = "Login Failed";
             }
             else
             {
@@ -51,10 +53,10 @@ namespace WebApplication1
                 if (string.Equals(Session["employeeTitle"].ToString(), "Hr", StringComparison.OrdinalIgnoreCase))
                 {
 
-                    Response.Redirect("http://localhost:58084/Views/HrPage.aspx");
+                    Response.Redirect(_hrPage);
                 }
 
-                Response.Redirect("http://localhost:58084/Views/EmployeePage.aspx");
+                Response.Redirect(_employeePage);
             }
         }
 
