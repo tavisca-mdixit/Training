@@ -7,3 +7,4 @@ C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.
 C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ServiceTests\bin\Debug\Newtonsoft.Json.xml
 C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ServiceTests\obj\Debug\Tavisca.EmployeeManagement.ServiceTests.dll
 C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ServiceTests\obj\Debug\Tavisca.EmployeeManagement.ServiceTests.pdb
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ServiceTests\obj\Debug\Tavisca.EmployeeManagement.ServiceTests.csprojResolveAssemblyReference.cache

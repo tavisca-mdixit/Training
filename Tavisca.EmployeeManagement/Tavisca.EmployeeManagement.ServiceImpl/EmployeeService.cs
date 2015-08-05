@@ -25,7 +25,7 @@ namespace Tavisca.EmployeeManagement.ServiceImpl
             try
             {
                 var result = _manager.Get(employeeId);
-                if (result == null) return response;
+                if (result == null) return response; 
                 response.RequestedEmployee = result.ToDataContract();
                 return response;
             }
