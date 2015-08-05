@@ -1,0 +1,10 @@
+D:\Wcf\Tavisca-Training-WCF-EMS\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ServiceTests\obj\Debug\Tavisca.EmployeeManagement.ServiceTests.csprojResolveAssemblyReference.cache
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ServiceTests\bin\Debug\Data\Data.xls
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ServiceTests\bin\Debug\Tavisca.EmployeeManagement.ServiceTests.dll.config
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ServiceTests\bin\Debug\Tavisca.EmployeeManagement.ServiceTests.dll
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ServiceTests\bin\Debug\Tavisca.EmployeeManagement.ServiceTests.pdb
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ServiceTests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ServiceTests\bin\Debug\Newtonsoft.Json.xml
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ServiceTests\obj\Debug\Tavisca.EmployeeManagement.ServiceTests.dll
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ServiceTests\obj\Debug\Tavisca.EmployeeManagement.ServiceTests.pdb
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ServiceTests\obj\Debug\Tavisca.EmployeeManagement.ServiceTests.csprojResolveAssemblyReference.cache

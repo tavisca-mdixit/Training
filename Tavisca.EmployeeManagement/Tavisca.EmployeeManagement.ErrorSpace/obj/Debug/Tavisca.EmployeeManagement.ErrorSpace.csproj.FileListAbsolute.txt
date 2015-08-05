@@ -1,0 +1,9 @@
+D:\Training\Training\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ErrorSpace\bin\Debug\Tavisca.EmployeeManagement.ErrorSpace.dll
+D:\Training\Training\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ErrorSpace\bin\Debug\Tavisca.EmployeeManagement.ErrorSpace.pdb
+D:\Training\Training\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ErrorSpace\obj\Debug\Tavisca.EmployeeManagement.ErrorSpace.csprojResolveAssemblyReference.cache
+D:\Training\Training\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ErrorSpace\obj\Debug\Tavisca.EmployeeManagement.ErrorSpace.dll
+D:\Training\Training\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ErrorSpace\obj\Debug\Tavisca.EmployeeManagement.ErrorSpace.pdb
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ErrorSpace\bin\Debug\Tavisca.EmployeeManagement.ErrorSpace.dll
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ErrorSpace\bin\Debug\Tavisca.EmployeeManagement.ErrorSpace.pdb
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ErrorSpace\obj\Debug\Tavisca.EmployeeManagement.ErrorSpace.dll
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ErrorSpace\obj\Debug\Tavisca.EmployeeManagement.ErrorSpace.pdb

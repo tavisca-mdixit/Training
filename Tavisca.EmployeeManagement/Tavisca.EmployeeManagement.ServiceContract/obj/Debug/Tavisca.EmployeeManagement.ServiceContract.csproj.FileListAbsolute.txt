@@ -1,0 +1,14 @@
+D:\Training\Training\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ServiceContract\bin\Debug\Tavisca.EmployeeManagement.ServiceContract.dll
+D:\Training\Training\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ServiceContract\bin\Debug\Tavisca.EmployeeManagement.ServiceContract.pdb
+D:\Training\Training\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ServiceContract\bin\Debug\Tavisca.EmployeeManagement.DataContract.dll
+D:\Training\Training\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ServiceContract\bin\Debug\Tavisca.EmployeeManagement.DataContract.pdb
+D:\Training\Training\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ServiceContract\obj\Debug\Tavisca.EmployeeManagement.ServiceContract.csprojResolveAssemblyReference.cache
+D:\Training\Training\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ServiceContract\obj\Debug\Tavisca.EmployeeManagement.ServiceContract.dll
+D:\Training\Training\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ServiceContract\obj\Debug\Tavisca.EmployeeManagement.ServiceContract.pdb
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ServiceContract\bin\Debug\Tavisca.EmployeeManagement.ServiceContract.dll
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ServiceContract\bin\Debug\Tavisca.EmployeeManagement.ServiceContract.pdb
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ServiceContract\bin\Debug\Tavisca.EmployeeManagement.DataContract.dll
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ServiceContract\bin\Debug\Tavisca.EmployeeManagement.DataContract.pdb
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ServiceContract\obj\Debug\Tavisca.EmployeeManagement.ServiceContract.csprojResolveAssemblyReference.cache
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ServiceContract\obj\Debug\Tavisca.EmployeeManagement.ServiceContract.dll
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.ServiceContract\obj\Debug\Tavisca.EmployeeManagement.ServiceContract.pdb

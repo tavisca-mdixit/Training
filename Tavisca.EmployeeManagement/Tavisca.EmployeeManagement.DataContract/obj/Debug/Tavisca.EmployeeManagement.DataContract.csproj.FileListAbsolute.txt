@@ -1,0 +1,9 @@
+D:\Training\Training\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.DataContract\bin\Debug\Tavisca.EmployeeManagement.DataContract.dll
+D:\Training\Training\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.DataContract\bin\Debug\Tavisca.EmployeeManagement.DataContract.pdb
+D:\Training\Training\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.DataContract\obj\Debug\Tavisca.EmployeeManagement.DataContract.csprojResolveAssemblyReference.cache
+D:\Training\Training\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.DataContract\obj\Debug\Tavisca.EmployeeManagement.DataContract.dll
+D:\Training\Training\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.DataContract\obj\Debug\Tavisca.EmployeeManagement.DataContract.pdb
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.DataContract\bin\Debug\Tavisca.EmployeeManagement.DataContract.dll
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.DataContract\bin\Debug\Tavisca.EmployeeManagement.DataContract.pdb
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.DataContract\obj\Debug\Tavisca.EmployeeManagement.DataContract.dll
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.DataContract\obj\Debug\Tavisca.EmployeeManagement.DataContract.pdb

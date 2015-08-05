@@ -1,0 +1,14 @@
+D:\Training\Training\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.Interface\bin\Debug\Tavisca.EmployeeManagement.Interface.dll
+D:\Training\Training\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.Interface\bin\Debug\Tavisca.EmployeeManagement.Interface.pdb
+D:\Training\Training\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.Interface\bin\Debug\Tavisca.EmployeeManagement.Model.dll
+D:\Training\Training\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.Interface\bin\Debug\Tavisca.EmployeeManagement.Model.pdb
+D:\Training\Training\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.Interface\obj\Debug\Tavisca.EmployeeManagement.Interface.csprojResolveAssemblyReference.cache
+D:\Training\Training\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.Interface\obj\Debug\Tavisca.EmployeeManagement.Interface.dll
+D:\Training\Training\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.Interface\obj\Debug\Tavisca.EmployeeManagement.Interface.pdb
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.Interface\bin\Debug\Tavisca.EmployeeManagement.Interface.dll
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.Interface\bin\Debug\Tavisca.EmployeeManagement.Interface.pdb
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.Interface\bin\Debug\Tavisca.EmployeeManagement.Model.dll
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.Interface\bin\Debug\Tavisca.EmployeeManagement.Model.pdb
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.Interface\obj\Debug\Tavisca.EmployeeManagement.Interface.csprojResolveAssemblyReference.cache
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.Interface\obj\Debug\Tavisca.EmployeeManagement.Interface.dll
+C:\Users\mdixit\Downloads\Tavisca.EmployeeManagement\Tavisca.EmployeeManagement.Interface\obj\Debug\Tavisca.EmployeeManagement.Interface.pdb
