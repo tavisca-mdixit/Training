@@ -1,0 +1,62 @@
+﻿@model Model.Employee
+@{
+    ViewBag.Title = "AddEmployee";
+}
+
+<h2>AddEmployee</h2>
+
+@using (Html.BeginForm("SaveEmployee", "Hr"))
+{
+   <div class="navbar-collapse collapse">
+   <ul class="nav navbar-nav">
+
+           @Html.ActionLink("Add Employee", "SaveEmployee", "HR")
+    
+           @Html.ActionLink("Add Remark", "AddRemark", "HR")
+     
+           @Html.ActionLink("Change Password", "Manage", "Account")
+   </ul>
+</div>
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary()
+    <form action="/Hr/SaveEmployee" method="post">
+        <fieldset>
+            <legend></legend>
+            <ol>
+                <li>
+                    @Html.LabelFor(m => m.FirstName)
+                    @Html.TextBoxFor(m => m.FirstName)
+                   @Html.ValidationMessageFor(m => m.FirstName)
+                </li>
+                <li>
+                    @Html.LabelFor(m => m.LastName)
+                    @Html.TextBoxFor(m => m.LastName)
+                    @Html.ValidationMessageFor(m => m.LastName)
+                </li>
+                <li>
+                    @Html.LabelFor(m => m.Title)
+                    @Html.TextBoxFor(m => m.Title)
+                    @Html.ValidationMessageFor(m => m.Title)
+                </li>
+
+
+                <li>
+                    @Html.LabelFor(m => m.Email)
+                    @Html.TextBoxFor(m => m.Email)
+                    @Html.ValidationMessageFor(m => m.Email)
+                </li>
+                <li>
+                    @Html.LabelFor(m => m.Phone)
+                    @Html.TextBoxFor(m => m.Phone)
+                    @Html.ValidationMessageFor(m => m.Phone)
+                </li>
+                <li>
+                    @Html.LabelFor(m => m.JoiningDate)
+                    @Html.TextBoxFor(m => m.JoiningDate)
+                    @Html.ValidationMessageFor(m => m.JoiningDate)
+                </li>
+            </ol>
+            <input type="submit" value="Submit" />
+        </fieldset>
+    </form>
+}

@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "SuccessPartial";
+}
+@using (@Html.BeginForm())
+{
+    <form   method ="post">
+
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary()
+   
+            <fieldset>
+                <legend></legend>
+                <ol>
+                <li>
+                    @Html.Label("Request Processed Successfully")
+                </li>
+           </ol>
+            </fieldset>
+        </form>
+
+}

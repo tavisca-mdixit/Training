@@ -1,0 +1,45 @@
+﻿@model Model.Remark
+
+@{
+    ViewBag.Title = "AddRemark";
+}
+
+<h2>AddRemark</h2>
+
+@using (@Html.BeginForm("SaveRemark", "Hr"))
+{
+<div class="navbar-collapse collapse">
+   <ul class="nav navbar-nav">
+
+           @Html.ActionLink("Add Employee", "SaveEmployee", "HR")
+    
+           @Html.ActionLink("Add Remark", "AddRemark", "HR")
+     
+           @Html.ActionLink("Change Password", "Manage", "Account")
+   </ul>
+</div>
+
+    <form action="/Hr/SaveRemark"  method ="post">
+
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary()
+   
+            <fieldset>
+                <legend></legend>
+                <ol>
+                <li>
+                    @Html.Label("Select Employee")
+                </li>
+                <li>
+             @*   @Html.DropDownList("Employee",ViewData["EmpList"] as List<SelectListItem>)*@
+                    
+                       @Html.DropDownList("Employee",(List<SelectListItem>)ViewBag.EmpList)
+                @Html.TextBoxFor(m => m.Text)
+                @Html.ValidationMessageFor(m => m.Text)
+                   </li> 
+            </ol>
+                <input type="submit" value="SaveRemark"  />
+            </fieldset>
+        </form>
+
+}

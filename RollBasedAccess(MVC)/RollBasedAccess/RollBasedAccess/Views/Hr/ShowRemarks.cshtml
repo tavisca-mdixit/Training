@@ -1,0 +1,31 @@
+﻿
+@model List<Model.Remark>
+<div class="navbar-collapse collapse">
+   <ul class="nav navbar-nav">
+
+      
+    
+           @Html.ActionLink("Show Remark", "ShowRemarks", "HR")
+     
+           @Html.ActionLink("Change Password", "Manage", "Account")
+   </ul>
+</div>
+@{
+    ViewBag.Title = "ShowRemarks";
+    List<string> columns = new List<string>();
+    columns.Add("Text");
+    columns.Add("CreateTimeStamp");
+    
+    var  grid = new WebGrid(rowsPerPage:ViewBag.PageSize,canPage:true);
+    grid.Bind(source: Model, columnNames: columns, autoSortAndPage: false,rowCount:Convert.ToInt32(ViewBag.RowSize));
+    
+}
+
+<h2>List of Remarks</h2>
+ @grid.GetHtml(tableStyle:"gridtable",
+                   columns: grid.Columns(
+                               grid.Column("CreateTimeStamp","Creation Time"),
+                               grid.Column("Text","Remark")
+                           )
+                       )      
+   
