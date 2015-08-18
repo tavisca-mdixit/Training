@@ -19,13 +19,14 @@ namespace EmployeeManagementWidget.EmployeeManagementWidgets
 
         protected void Page_Load(object sender, EventArgs e)
         {
+
             if (Page.IsPostBack == false)
             {
 
                 var response = GetAllEmployeeResponse.getEmpList();
                 if (response.ResponseStatus.Code != "200")
                 {
-                    ErrorMessage.Text = "Unable to process request";
+                    ErrorMessage.Text = "Unable to process the request";
                 }
                 else
                 {
