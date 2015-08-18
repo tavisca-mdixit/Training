@@ -1,0 +1,11 @@
+C:\Users\mdixit\Downloads\Templar_v1.7.2.1\2. Release\EmployeeManagementWidget\bin\EmployeeManagementWidget.dll
+C:\Users\mdixit\Downloads\Templar_v1.7.2.1\2. Release\EmployeeManagementWidget\bin\EmployeeManagementWidget.pdb
+C:\Users\mdixit\Downloads\Templar_v1.7.2.1\2. Release\EmployeeManagementWidget\bin\RollBasedAccess.Model.dll
+C:\Users\mdixit\Downloads\Templar_v1.7.2.1\2. Release\EmployeeManagementWidget\bin\Tavisca.Templar.Contract.dll
+C:\Users\mdixit\Downloads\Templar_v1.7.2.1\2. Release\EmployeeManagementWidget\bin\Tavisca.Templar.Extensions.dll
+C:\Users\mdixit\Downloads\Templar_v1.7.2.1\2. Release\EmployeeManagementWidget\bin\Tavisca.Templar.WebControls.dll
+C:\Users\mdixit\Downloads\Templar_v1.7.2.1\2. Release\EmployeeManagementWidget\bin\Tavisca.Frameworks.Spectrum.dll
+C:\Users\mdixit\Downloads\Templar_v1.7.2.1\2. Release\EmployeeManagementWidget\bin\RollBasedAccess.Model.pdb
+C:\Users\mdixit\Downloads\Templar_v1.7.2.1\2. Release\EmployeeManagementWidget\obj\Debug\EmployeeManagementWidget.csprojResolveAssemblyReference.cache
+C:\Users\mdixit\Downloads\Templar_v1.7.2.1\2. Release\EmployeeManagementWidget\obj\Debug\EmployeeManagementWidget.dll
+C:\Users\mdixit\Downloads\Templar_v1.7.2.1\2. Release\EmployeeManagementWidget\obj\Debug\EmployeeManagementWidget.pdb
