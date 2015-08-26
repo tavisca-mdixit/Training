@@ -1,0 +1,11 @@
+D:\Training1\RollBasedAccess(MVC)\AspAutomationTesting\AspAutomationTesting\bin\Debug\AspAutomationTesting.dll
+D:\Training1\RollBasedAccess(MVC)\AspAutomationTesting\AspAutomationTesting\bin\Debug\AspAutomationTesting.pdb
+D:\Training1\RollBasedAccess(MVC)\AspAutomationTesting\AspAutomationTesting\bin\Debug\nunit.framework.dll
+D:\Training1\RollBasedAccess(MVC)\AspAutomationTesting\AspAutomationTesting\bin\Debug\WebDriver.dll
+D:\Training1\RollBasedAccess(MVC)\AspAutomationTesting\AspAutomationTesting\bin\Debug\WebDriver.Support.dll
+D:\Training1\RollBasedAccess(MVC)\AspAutomationTesting\AspAutomationTesting\bin\Debug\nunit.framework.xml
+D:\Training1\RollBasedAccess(MVC)\AspAutomationTesting\AspAutomationTesting\bin\Debug\WebDriver.xml
+D:\Training1\RollBasedAccess(MVC)\AspAutomationTesting\AspAutomationTesting\bin\Debug\WebDriver.Support.xml
+D:\Training1\RollBasedAccess(MVC)\AspAutomationTesting\AspAutomationTesting\obj\Debug\AspAutomationTesting.csprojResolveAssemblyReference.cache
+D:\Training1\RollBasedAccess(MVC)\AspAutomationTesting\AspAutomationTesting\obj\Debug\AspAutomationTesting.dll
+D:\Training1\RollBasedAccess(MVC)\AspAutomationTesting\AspAutomationTesting\obj\Debug\AspAutomationTesting.pdb

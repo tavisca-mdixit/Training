@@ -1,0 +1,14 @@
+C:\Users\syeram\Desktop\v1.7.1\2. Release\SampleWidgets\bin\Debug\SampleWidgets.dll
+C:\Users\syeram\Desktop\v1.7.1\2. Release\SampleWidgets\bin\Debug\SampleWidgets.pdb
+C:\Users\syeram\Desktop\v1.7.1\2. Release\SampleWidgets\bin\Debug\Tavisca.Templar.Contract.dll
+C:\Users\syeram\Desktop\v1.7.1\2. Release\SampleWidgets\bin\Debug\Tavisca.Frameworks.Spectrum.dll
+C:\Users\syeram\Desktop\v1.7.1\2. Release\SampleWidgets\obj\Debug\SampleWidgets.csprojResolveAssemblyReference.cache
+C:\Users\syeram\Desktop\v1.7.1\2. Release\SampleWidgets\obj\Debug\SampleWidgets.dll
+C:\Users\syeram\Desktop\v1.7.1\2. Release\SampleWidgets\obj\Debug\SampleWidgets.pdb
+C:\Users\mdixit\Downloads\Templar_v1.7.2.1\2. Release\SampleWidgets\bin\Debug\SampleWidgets.dll
+C:\Users\mdixit\Downloads\Templar_v1.7.2.1\2. Release\SampleWidgets\bin\Debug\SampleWidgets.pdb
+C:\Users\mdixit\Downloads\Templar_v1.7.2.1\2. Release\SampleWidgets\bin\Debug\Tavisca.Templar.Contract.dll
+C:\Users\mdixit\Downloads\Templar_v1.7.2.1\2. Release\SampleWidgets\bin\Debug\Tavisca.Frameworks.Spectrum.dll
+C:\Users\mdixit\Downloads\Templar_v1.7.2.1\2. Release\SampleWidgets\obj\Debug\SampleWidgets.csprojResolveAssemblyReference.cache
+C:\Users\mdixit\Downloads\Templar_v1.7.2.1\2. Release\SampleWidgets\obj\Debug\SampleWidgets.dll
+C:\Users\mdixit\Downloads\Templar_v1.7.2.1\2. Release\SampleWidgets\obj\Debug\SampleWidgets.pdb
